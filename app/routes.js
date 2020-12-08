@@ -42,11 +42,17 @@ router.get('/v2/*', function(req, res, next){
   next()
 });
 
+router.get('/s1/*', function(req, res, next){
+  res.locals['serviceName'] = 'Guidance on Salmonella rules'
+  next()
+});
+
 // Start folder specific route
 router.use('/current', require('./views/current/routes/_routes-water'));
 router.use('/current', require('./views/current/routes/_routes-slurry'));
 router.use('/v1', require('./views/v1/routes/_routes'));
 router.use('/v2', require('./views/v2/routes/_routes'));
+router.use('/s1', require('./views/s1/routes/_routes'));
 
 
 // Task list status settings
