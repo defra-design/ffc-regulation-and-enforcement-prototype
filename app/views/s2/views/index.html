@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% extends "./layouts/_BASEFULL.html" %}
+
+{% block service %}
+
+<span class="govuk-caption-xl">Prototypes</span>
+<h1 class="govuk-heading-xl">
+  Salmonella rules
+</h1>
+<p>
+  The following were built using GOV.UK Prototype Kit v9.8.0.
+</p>
+
+<h2 class="govuk-heading-m">
+  Prototypes
+</h2>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Prototype</th>
+      <th class="govuk-table__header" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="idea01">
+          Idea 1
+        </a></td>
+      <td class="govuk-table__cell">Focuses users on what they have to do.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="idea02">
+          Idea 2
+        </a></td>
+      <td class="govuk-table__cell">Summary of legal rules at the top of the page.</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="idea03">
+          Idea 3
+        </a></td>
+      <td class="govuk-table__cell">Same content as idea 2, using an accordion component instead of contents.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}
