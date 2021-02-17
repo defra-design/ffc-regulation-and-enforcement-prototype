@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% extends "./layouts/_BASEFULL.html" %}
+
+{% block service %}
+
+<span class="govuk-caption-xl">Prototypes</span>
+<h1 class="govuk-heading-xl">
+  Salmonella rules
+</h1>
+<p>
+  The following were built using GOV.UK Prototype Kit v9.8.0.
+</p>
+
+<h2 class="govuk-heading-m">
+  Prototypes
+</h2>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Prototype</th>
+      <th class="govuk-table__header" scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="salmonella-laying-hens">
+          Salmonella - test your laying hens
+        </a></td>
+      <td class="govuk-table__cell">Final version</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell">Changes made based on user research:
+        <ul class="govuk-list--bullet">
+        <li>Include legal requirements summary.<br>
+          This worked and allowed users to identify what they legally have to do quickly</li>
+        <li>Break up what you must do section<br>
+        Section was too long and users got lost in it</li>
+        <li>Make the contents work to show what you have to do<br>
+        Users don't read the full page, they use the contents to jump to the section they need</li>
+        
+
+      </ul> </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+{% endblock %}
