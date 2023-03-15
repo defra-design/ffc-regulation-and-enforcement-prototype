@@ -16,12 +16,23 @@ Rules for farmers and land managers
 {% endblock %}
 
 {% block header %}
-{% include "../includes/header-publisher.html" %}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+{{ govukHeader({
+  homepageUrl: "#"
+}) }}
 {% endblock %}
 
 {% block beforeContent %}
 
 <div id="global-header-bar"></div>
+
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
 
 <div class="gem-c-contextual-breadcrumbs">
 
@@ -63,7 +74,7 @@ Rules for farmers and land managers
       </h1>
     </div>
 
-    <p class="gem-c-lead-paragraph">Rules you must follow to keep animals, protect the environment, plant or remove woodland, use pesticides, fertilisers or manure on your land.</p>
+    <p class="gem-c-lead-paragraph">What you legally must do to keep animals, manage land and woodland.</p>
   </div>
 </div>
 
@@ -84,7 +95,7 @@ Rules for farmers and land managers
             <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
               <span class="app-c-publisher-metadata__definition-sentence">
                <a
-                  class="govuk-link" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs</a>, <a href="#">Environment Agency</a>, <a href="#">Rural Payments Agency</a>, <a href="#">Forestry Commission</a>, <a href="#">Historic England</a>
+                  class="govuk-link" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs</a>, <a href="#">Environment Agency</a>, <a href="#">Rural Payments Agency</a>, <a href="#">Forestry Commission</a>, <a href="#">Historic England</a>, <a href="#">Health and Safety Executive</a>, <a href="#">Food Standards Agency</a>
               </span>
             </dd>
           </dl>
