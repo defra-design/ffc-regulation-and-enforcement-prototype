@@ -26,6 +26,13 @@ Rules for farmers and land managers
 
 <div id="global-header-bar"></div>
 
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
 
 <div class="gem-c-contextual-breadcrumbs">
 
@@ -60,14 +67,14 @@ Rules for farmers and land managers
 
     <div class="gem-c-title govuk-x!-margin-top-8 govuk-!-margin-bottom-8">
       <p class="gem-c-title__context">
-        Collection
+        Guidance
       </p>
       <h1 class="gem-c-title__text gem-c-title__text--long">
        Rules for farmers and land managers
       </h1>
     </div>
 
-    <p class="gem-c-lead-paragraph">Get to know the legal rules that apply when you keep livestock or manage land.</p>
+    <p class="gem-c-lead-paragraph">What you legally must do if you keep livestock or manage land.</p>
   </div>
 </div>
 
@@ -76,7 +83,7 @@ Rules for farmers and land managers
     <div class="govuk-grid-column-two-thirds metadata-column">
       <div class="app-c-publisher-metadata" lang="en">
         <div class="app-c-published-dates " lang="en">
-          DRAFT 21 March 2023
+          DRAFT 16 March 2023
 
         </div>
 
@@ -151,7 +158,12 @@ Rules for farmers and land managers
                 data-track-label="/guidance/salmonella-get-your-breeding-chickens-tested"
                 data-track-options="{&quot;dimension28&quot;:&quot;5&quot;,&quot;dimension29&quot;:&quot;Chicken breeders: poultry testing for salmonella&quot;}"
                 href="https://www.gov.uk/guidance/funding-for-farmers">Funding for farmers and land managers</a></li>
-        
+            <li class="gem-c-related-navigation__link"><a
+                    class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"
+                    href="https://www.gov.uk/government/publications/get-free-business-advice-for-your-farm">Farming Resilience Fund: free business advice for your farm</a></li>
+            <li class="gem-c-related-navigation__link"><a
+                    class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"
+                    href="https://www.gov.uk/guidance/contact-defra">Contact Defra</a></li>
 
           </ul>
         </nav>
