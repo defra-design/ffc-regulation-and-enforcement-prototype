@@ -1,0 +1,192 @@
+{% set tocPage = true %}
+
+{% extends "../layout.html" %}
+
+{% block head %}
+
+<link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/core-layout.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/publisher.css" media="screen" rel="stylesheet" type="text/css">
+
+{% endblock %}
+
+{% block pageTitle %}
+Rules for farmers and land managers
+{% endblock %}
+
+{% block header %}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+{{ govukHeader({
+  homepageUrl: "#"
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div id="global-header-bar"></div>
+
+
+<div class="gem-c-contextual-breadcrumbs">
+
+  <div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label=""
+          data-track-options="{}" class="govuk-breadcrumbs__link" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/environment"
+          data-track-options="{&quot;dimension28&quot;:&quot;4&quot;,&quot;dimension29&quot;:&quot;Environment&quot;}"
+          class="govuk-breadcrumbs__link" href="http://gov.uk/environment">Environment</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/environment"
+          data-track-options="{&quot;dimension28&quot;:&quot;4&quot;,&quot;dimension29&quot;:&quot;Environment&quot;}"
+          class="govuk-breadcrumbs__link" href="http://gov.uk/environment/food-and-farming">Food and farming</a>
+      </li>
+
+    </ol>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="gem-c-heading govuk-heading-xl gem-c-heading--inverse govuk-!-margin-bottom-6">
+       Rules for farmers and land managers
+      </h1>
+
+
+    <p class="gem-c-lead-paragraph">What you must do when you keep livestock or manage land.</p>
+  </div>
+
+  </div>
+<!--
+
+<div class="govuk-grid-row">
+  <div class="metadata-logo-wrapper">
+    <div class="govuk-grid-column-two-thirds metadata-column">
+      <div class="app-c-publisher-metadata" lang="en">
+        <div class="app-c-published-dates " lang="en">
+          DRAFT 23 June 2023 - food and feed journeys
+
+        </div>
+
+    <!--    <div class="app-c-publisher-metadata__other">
+          <dl data-module="track-click">
+            <dt class="app-c-publisher-metadata__term">
+              From:
+            </dt>
+            <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
+              <span class="app-c-publisher-metadata__definition-sentence">
+               <a
+                  class="govuk-link" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs</a>, <a href="#">Environment Agency</a>, <a href="#">Rural Payments Agency</a>, <a href="#">Forestry Commission</a>, <a href="#">Animal and Plant Health Agency</a>, <a href="#">Food Standards Agency</a>
+              </span>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div id="toc" class="toc govuk-!-margin-bottom-9"><nav role="navigation" class="gem-c-contents-list gem-c-contents-list--no-underline"><h2 class="gem-c-contents-list__title">Contents</h2><ol class="gem-c-contents-list__list"><li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"><a class="gem-c-contents-list__link " href="#basic-payment-scheme">Basic Payment Scheme</a></li><li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"><a class="gem-c-contents-list__link " href="#countryside-stewardship-and-environmental-stewardship-claims">Countryside Stewardship and Environmental Stewardship claims</a></li><li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"><a class="gem-c-contents-list__link " href="#countryside-stewardship-applications">Countryside Stewardship applications</a></li></ol></nav></div>
+
+
+    <!-- start of guidance specific block -->
+    {% block guidance %}Guidance content goes here, override this by overriding the block{% endblock %}
+    <!-- end guidance specific block-->
+
+    <div class="responsive-bottom-margin">
+    </div>
+  <!--  <div data-sticky-element="" class="app-c-contents-list-with-body__link-wrapper govuk-sticky-element--enabled">
+      <div class="app-c-contents-list-with-body__link-container">
+        <a class="govuk-link app-c-back-to-top dont-print" href="#toc">
+          <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17"
+            viewBox="0 0 13 17">
+            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+          </svg>
+          Contents
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+
+    <div class="gem-c-contextual-sidebar">
+
+      <div class="gem-c-related-navigation">
+
+        <p id="related-nav-related_items-9c54cbba" class="gem-c-related-navigation__main-heading"
+          data-track-count="sidebarRelatedItemSection">
+          Related content
+        </p>
+
+
+
+
+        <nav role="navigation" class="gem-c-related-navigation__nav-section"
+          aria-labelledby="related-nav-related_items-9c54cbba" data-module="gem-toggle">
+
+
+          <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+            <li class="gem-c-related-navigation__link"><a
+                class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"
+                data-track-category="relatedLinkClicked" data-track-action="1.1 Related content"
+                data-track-label="/guidance/salmonella-get-your-breeding-chickens-tested"
+                data-track-options="{&quot;dimension28&quot;:&quot;5&quot;,&quot;dimension29&quot;:&quot;Chicken breeders: poultry testing for salmonella&quot;}"
+                href="https://www.gov.uk/guidance/funding-for-farmers">Funding for farmers and land managers</a></li>
+                <li class="gem-c-related-navigation__link"><a
+                    class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"
+                    data-track-category="relatedLinkClicked" data-track-action="1.1 Related content"
+                    data-track-label="/guidance/salmonella-get-your-breeding-chickens-tested"
+                    data-track-options="{&quot;dimension28&quot;:&quot;5&quot;,&quot;dimension29&quot;:&quot;Chicken breeders: poultry testing for salmonella&quot;}"
+                    href="https://www.gov.uk/government/publications/cross-compliance-2023">Cross compliance 2023</a></li>
+
+
+
+
+          </ul>
+        </nav>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="gem-c-contextual-footer">
+
+      <div class="gem-c-related-navigation">
+
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+-->
+
+{% endblock %}

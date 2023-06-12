@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-Rules for feeding livestock
+Rules for farmers and land managers
 {% endblock %}
 
 {% block header %}
@@ -26,6 +26,13 @@ Rules for feeding livestock
 
 <div id="global-header-bar"></div>
 
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
 
 <div class="gem-c-contextual-breadcrumbs">
 
@@ -63,11 +70,11 @@ Rules for feeding livestock
         Guidance
       </p>
       <h1 class="gem-c-title__text gem-c-title__text--long">
-       Rules about feeding livestock
+       Rules for farmers and land managers
       </h1>
     </div>
 
-    <p class="gem-c-lead-paragraph">Get to know the feed hygiene rules that apply when you feed livestock.</p>
+    <p class="gem-c-lead-paragraph">What you legally must do if you keep livestock or manage land.</p>
   </div>
 </div>
 
@@ -76,7 +83,7 @@ Rules for feeding livestock
     <div class="govuk-grid-column-two-thirds metadata-column">
       <div class="app-c-publisher-metadata" lang="en">
         <div class="app-c-published-dates " lang="en">
-          DRAFT 22 May 2023
+          DRAFT 16 March 2023
 
         </div>
 
@@ -151,15 +158,12 @@ Rules for feeding livestock
                 data-track-label="/guidance/salmonella-get-your-breeding-chickens-tested"
                 data-track-options="{&quot;dimension28&quot;:&quot;5&quot;,&quot;dimension29&quot;:&quot;Chicken breeders: poultry testing for salmonella&quot;}"
                 href="https://www.gov.uk/guidance/funding-for-farmers">Funding for farmers and land managers</a></li>
-                <li class="gem-c-related-navigation__link"><a
+            <li class="gem-c-related-navigation__link"><a
                     class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"
-                    data-track-category="relatedLinkClicked" data-track-action="1.1 Related content"
-                    data-track-label="/guidance/salmonella-get-your-breeding-chickens-tested"
-                    data-track-options="{&quot;dimension28&quot;:&quot;5&quot;,&quot;dimension29&quot;:&quot;Chicken breeders: poultry testing for salmonella&quot;}"
-                    href="https://www.gov.uk/government/publications/cross-compliance-2023">Cross compliance 2023</a></li>
-
-
-
+                    href="https://www.gov.uk/government/publications/get-free-business-advice-for-your-farm">Farming Resilience Fund: free business advice for your farm</a></li>
+            <li class="gem-c-related-navigation__link"><a
+                    class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"
+                    href="https://www.gov.uk/guidance/contact-defra">Contact Defra</a></li>
 
           </ul>
         </nav>
