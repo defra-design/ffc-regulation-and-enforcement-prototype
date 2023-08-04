@@ -9,32 +9,10 @@
 <link href="/public/stylesheets/core-layout.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/public/stylesheets/publisher.css" media="screen" rel="stylesheet" type="text/css">
 
-
-
-<html class="govuk-template show-global-bar" lang="en"><!--<![endif]--><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="govuk:primary-publishing-organisation" content="Government Digital Service">
-<meta name="govuk:public-updated-at" content="2023-08-02T10:46:25Z">
-<meta name="govuk:updated-at" content="2023-08-02T10:48:55Z">
-<meta name="govuk:first-published-at" content="2023-08-02T10:46:25Z">
-<meta name="govuk:content-id" content="2899dd91-99a2-40b4-9b17-2a100030d791">
-<meta name="govuk:schema-name" content="mainstream_browse_page">
-<meta name="govuk:rendering-app" content="collections">
-<meta name="govuk:publishing-app" content="collections-publisher">
-<meta name="govuk:format" content="mainstream_browse_page">
-<meta name="govuk:section" content="environment and countryside">
-<meta name="govuk:navigation-list-type" content="curated">
-<meta name="govuk:navigation-page-type" content="Browse level 2">
-<meta name="description" content="Agriculture, rural payments, imports and exports, workers’ rights, regulations">
-    <meta charset="utf-8">
-
-
-
-
 {% endblock %}
 
 {% block pageTitle %}
-Farming and land management - GOV.UK
+Rules for farmers and land managers
 {% endblock %}
 
 {% block header %}
@@ -45,6 +23,9 @@ Farming and land management - GOV.UK
 {% endblock %}
 
 {% block beforeContent %}
+
+<div id="global-header-bar"></div>
+
 
 <div class="gem-c-contextual-breadcrumbs">
 
@@ -57,7 +38,12 @@ Farming and land management - GOV.UK
       <li class="govuk-breadcrumbs__list-item">
         <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/environment"
           data-track-options="{&quot;dimension28&quot;:&quot;4&quot;,&quot;dimension29&quot;:&quot;Environment&quot;}"
-          class="govuk-breadcrumbs__link" href="https://www.gov.uk/browse/environment-countryside">Environment and countryside</a>
+          class="govuk-breadcrumbs__link" href="http://gov.uk/environment">Environment</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/environment"
+          data-track-options="{&quot;dimension28&quot;:&quot;4&quot;,&quot;dimension29&quot;:&quot;Environment&quot;}"
+          class="govuk-breadcrumbs__link" href="http://gov.uk/environment/food-and-farming">Food and farming</a>
       </li>
 
     </ol>
@@ -69,26 +55,50 @@ Farming and land management - GOV.UK
 
 {% block content %}
 
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
-<div class="browse__header-wrapper govuk-!-margin-bottom-8">
-  <div class="govuk-width-container">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
+    <div class="gem-c-title govuk-x!-margin-top-8 govuk-!-margin-bottom-8">
+      <p class="gem-c-title__context">
+        Collection
+      </p>
+      <h1 class="gem-c-title__text gem-c-title__text--long">
+       Keep livestock
+      </h1>
+    </div>
 
+    <p class="gem-c-lead-paragraph">What you must do to keep livestock and protect the public from cattle.</p>
+  </div>
+</div>
 
-  <h1 class="gem-c-heading govuk-heading-xl gem-c-heading--inverse   govuk-!-margin-bottom-6">
-  Farming and land management
-</h1>
-    <p class="gem-c-lead-paragraph gem-c-lead-paragraph govuk-!-margin-bottom-2">Agriculture, rural payments, imports and exports, workers’ rights, regulations</p>
+<div class="govuk-grid-row">
+  <div class="metadata-logo-wrapper">
+    <div class="govuk-grid-column-two-thirds metadata-column">
+      <div class="app-c-publisher-metadata" lang="en">
+        <div class="app-c-published-dates " lang="en">
+          DRAFT 17 May 2023
 
+        </div>
 
+        <div class="app-c-publisher-metadata__other">
+          <dl data-module="track-click">
+            <dt class="app-c-publisher-metadata__term">
+              From:
+            </dt>
+            <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
+              <span class="app-c-publisher-metadata__definition-sentence">
+               <a
+                  class="govuk-link" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs">Department for Environment, Food & Rural Affairs</a>, <a href="#">Environment Agency</a>, <a href="#">Rural Payments Agency</a>, <a href="#">Forestry Commission</a>, <a href="#">Animal and Plant Health Agency</a>, <a href="#">Food Standards Agency</a>
+              </span>
+            </dd>
+          </dl>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
 
-
-<!--
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <div id="toc" class="toc govuk-!-margin-bottom-9"><nav role="navigation" class="gem-c-contents-list gem-c-contents-list--no-underline"><h2 class="gem-c-contents-list__title">Contents</h2><ol class="gem-c-contents-list__list"><li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"><a class="gem-c-contents-list__link " href="#basic-payment-scheme">Basic Payment Scheme</a></li><li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"><a class="gem-c-contents-list__link " href="#countryside-stewardship-and-environmental-stewardship-claims">Countryside Stewardship and Environmental Stewardship claims</a></li><li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--dashed"><a class="gem-c-contents-list__link " href="#countryside-stewardship-applications">Countryside Stewardship applications</a></li></ol></nav></div>
@@ -100,7 +110,7 @@ Farming and land management - GOV.UK
 
     <div class="responsive-bottom-margin">
     </div>
-<!--    <div data-sticky-element="" class="app-c-contents-list-with-body__link-wrapper govuk-sticky-element--enabled">
+    <div data-sticky-element="" class="app-c-contents-list-with-body__link-wrapper govuk-sticky-element--enabled">
       <div class="app-c-contents-list-with-body__link-container">
         <a class="govuk-link app-c-back-to-top dont-print" href="#toc">
           <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17"
@@ -181,7 +191,7 @@ Farming and land management - GOV.UK
     </div>
 
   </div>
-</div>-->
+</div>
 
 
 {% endblock %}
