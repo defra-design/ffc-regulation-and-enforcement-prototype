@@ -1,0 +1,165 @@
+{% set tocPage = true %}
+
+{% extends "../layout.html" %}
+
+{% block head %}
+
+<link href="/public/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/govuk-template.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/core-layout.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/public/stylesheets/publisher.css" media="screen" rel="stylesheet" type="text/css">
+
+{% endblock %}
+
+{% block pageTitle %}
+How much nitrogen to use on crops in nitrate vulnerable zones
+{% endblock %}
+
+{% block header %}
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+{{ govukHeader({
+  homepageUrl: "#"
+}) }}
+{% endblock %}
+
+{% block beforeContent %}
+
+<div id="global-header-bar"></div>
+
+<div class="gem-c-contextual-breadcrumbs">
+
+  <div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+    <ol class="govuk-breadcrumbs__list">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label=""
+            data-track-options="{}" class="govuk-breadcrumbs__link" href="/">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/environment"
+            data-track-options="{&quot;dimension28&quot;:&quot;4&quot;,&quot;dimension29&quot;:&quot;Environment&quot;}"
+            class="govuk-breadcrumbs__link" href="https://www.gov.uk/topic/environmental-management/land-management">Land management</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a data-track-category="breadcrumbClicked" data-track-action="2" data-track-label="/environment"
+            data-track-options="{&quot;dimension28&quot;:&quot;4&quot;,&quot;dimension29&quot;:&quot;Environment&quot;}"
+            class="govuk-breadcrumbs__link" href="nitrate-vulnerable-zones.html">Nitrate vulnerable zones</a>
+        </li>
+      </ol>
+    </ol>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="gem-c-title govuk-x!-margin-top-8 govuk-!-margin-bottom-8">
+      <p class="gem-c-title__context">
+        Guidance
+      </p>
+      <h1 class="gem-c-title__text gem-c-title__text--long">
+        How much nitrogen to use on crops in nitrate vulnerable zones
+      </h1>
+    </div>
+
+    <p class="gem-c-lead-paragraph">Farm in a nitrate vulnerable zones and only apply limited amounts of nitrogen to your crops.</p>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="metadata-logo-wrapper">
+    <div class="govuk-grid-column-two-thirds metadata-column">
+      <div class="app-c-publisher-metadata" lang="en">
+        <div class="app-c-published-dates " lang="en">
+          Published 22 January 2024
+        </div>
+
+        <div class="app-c-publisher-metadata__other">
+          <dl data-module="track-click">
+            <dt class="app-c-publisher-metadata__term">
+              From:
+            </dt>
+            <dd class="app-c-publisher-metadata__definition" data-module="gem-toggle">
+              <span class="app-c-publisher-metadata__definition-sentence">
+                <a class="govuk-link" href="#">Department for Environment, Food &amp; Rural Affairs</a> and <a class="govuk-link" href="#">Environment Agency</a>
+              </span>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <!-- start of guidance specific block -->
+    {% block guidance %}Guidance content goes here, override this by overriding the block{% endblock %}
+    <!-- end guidance specific block-->
+</div>
+
+
+  <div class="govuk-grid-column-one-third">
+
+    <div class="gem-c-contextual-sidebar">
+
+      <div class="gem-c-related-navigation">
+
+        <p id="related-nav-related_items-9c54cbba" class="gem-c-related-navigation__main-heading"
+          data-track-count="sidebarRelatedItemSection">
+          Related content
+        </p>
+
+
+
+
+        <nav role="navigation" class="gem-c-related-navigation__nav-section"
+          aria-labelledby="related-nav-related_items-9c54cbba" data-module="gem-toggle">
+
+
+          <ul class="gem-c-related-navigation__link-list" data-module="track-click">
+
+
+            <li class="gem-c-related-navigation__link"><a
+                class="gem-c-related-navigation__section-link gem-c-related-navigation__section-link--sidebar  gem-c-related-navigation__section-link--other"
+                href="#">?</a></li>
+
+          </ul>
+        </nav>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="gem-c-contextual-footer">
+
+      <div class="gem-c-related-navigation">
+
+
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div> -->
+
+
+{% endblock %}
