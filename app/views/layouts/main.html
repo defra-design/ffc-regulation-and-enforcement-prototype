@@ -5,6 +5,11 @@
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
 
+{% block scripts %}
+{{ super() }}
+<script src="/public/javascripts/toc.js"></script>
+{% endblock %}
+
 {% if (GOVUKPrototypeKit.isDevelopment) %}
   {% set footerItems = [
     {
