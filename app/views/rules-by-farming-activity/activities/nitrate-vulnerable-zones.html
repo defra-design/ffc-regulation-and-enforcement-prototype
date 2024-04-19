@@ -1,0 +1,209 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Nitrate vulnerable zones
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Environment",
+        href: "#"
+      },
+      {
+        text: "Food and farming",
+        href: "farming-and-land-management"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-caption-xl c-title__context">
+        Collection
+      </p>
+      <h1 class="govuk-heading-xl">
+        Nitrate vulnerable zones
+      </h1>
+
+      <p class="gem-c-lead-paragraph">Rules farmers and land managers must follow to store manure.</p>
+
+
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#find-out-if-your-land-is-in-an-nvz">
+                Find out if your land is in a NVZ
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#what-you-can-do-if-your-land-is-moved-into-an-nvz">
+              What you can do if your land is designated as an NVZ
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#rules-for-all-farmers-in-nvzs">
+                Rules for all farmers who have land in an NVZ
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#rules-for-farming-activities-in-nvzs">
+                Rules for farming activities in NVZs
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#follow-best-practice-for-nitrates">
+              Follow best practice for nitrates
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#inspections">
+              Inspections
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#get-advice">
+              Get advice
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+      <p>Nitrate Vulnerable Zones (NVZs) are areas designated as being at risk from pollution from agricultural nitrates. They cover about 55% of the land in England. You can help us reduce pollution in these areas.</p>
+
+
+      <h2 id="find-out-if-your-land-is-in-an-nvz" class="govuk-heading-m">Find out if your land is in an NVZ</h2>
+
+      <p>The Department for Environment, Food and Rural Affairs (Defra) reviews NVZs every 4 years to account for changes in nitrate concentrations. You can check for changes to the boundaries.</p>
+
+      <p class="govuk-body"><a href="https://environment.data.gov.uk/farmers">Find out if your land is an NVZ</a></p>
+
+      <p class="govuk-body">Contact the <a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">Environment Agency</a> if you have difficulty checking online or need a printed map.</p>
+
+      <h2 id="what-you-can-do-if-your-land-is-moved-into-an-nvz" class="govuk-heading-m">What you can do if your land is designated as an NVZ</h2>
+
+      <p class="govuk-body">If NVZ boundaries are redrawn to include your land, you can <a href="#">appeal an NVZ decision</a>.</p>
+
+      <h2 id="rules-for-all-farmers-in-nvzs" class="govuk-heading-m">Rules for all farmers who have land in an NVZ</h2>
+
+      <p class="govuk-body"><a href="nvz-how-much-nitrogen">Find out the nitrogen limit for the crops you grow</a> and when you can apply more than these limits.</p>
+
+        <p class="govuk-body"><a href="#">Make a fertilisation plan</a> to record your use of nitrogen on crops and grassland.</p>
+
+        <p class="govuk-body"><a href="#">Assess the risk of runoff</a> </p>
+
+        <p class="govuk-body"><a href="nvz-keep-records">Keep records about your fertiliser use for at least 5 years</a></p>
+
+        <p class="govuk-body">You may have to follow different rules if you <a href="#">apply fertiliser in greenhouses, glass houses, polytunnels</a> or you <a href="#">apply nitrogen fertiliser on a low-intensity farm</a>.</p>
+
+
+      <h2 id="rules-for-farming-activities-in-nvzs" class="govuk-heading-m">Rules for farming activities in NVZs</h2>
+
+      <p class="govuk-body"><a href="nvz-spread-fertiliser">Spread manufactured fertilisers</a></p>
+
+      <p class="govuk-body"><a href="nvz-spread-manure">Spread organic manures</a></p>
+
+      <p class="govuk-body"><a href="nvz-spread-high-nitrogen">Spread cattle, chicken or pig slurry with high readily available nitrogen</a></p>
+
+       <p class="govuk-body"><a href="#">Spread certified green or certified green/food compost</a></p>
+
+
+
+      <p class="govuk-body"><a href="#">Store organic manures</a></p>
+
+
+
+      <h2 id="follow-best-practice-for-nitrates" class="govuk-heading-m">Follow best practice for nitrates</h2>
+
+      <p class="govuk-body">You must follow the <a href="https://www.gov.uk/government/publications/protecting-our-water-soil-and-air">Code of Good Agricultural Practice for nitrates</a> if you claim agri-environment payments.</p>
+
+      <h2 id="inspections" class="govuk-heading-m">Inspections</h2>
+
+      <p class="govuk-body">The Environment Agency enforces the NVZ rules. Its officers select which farms to inspect. Officers will offer advice to help you comply with the NVZ rules.</p>
+
+      <h2 id="get-advice" class="govuk-heading-m">Get advice</h2>
+
+      <p class="govuk-body">Contact the <a href="https://www.gov.uk/government/groups/farming-advice-service">Farming Advice Service</a>.</p>
+
+      </div>
+
+
+
+
+
+    <div class="govuk-grid-column-one-third">
+      <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+   <!--    {{ govukPagination({
+         previous: {
+           labelText: "Page 1 title",
+           href: "#"
+         },
+         next: {
+           labelText: "Page 3 title",
+           href: "#"
+         }
+       }) }}
+
+       <p>
+         <a href="#">
+           View a printable version of the whole guide
+         </a>
+       </p>-->
+
+</div>
+
+       <div class="govuk-grid-column-one-third">
+
+         <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+           <h2 class="govuk-heading-m" id="subsection-title">
+             Related content
+           </h2>
+           <nav role="navigation" aria-labelledby="subsection-title">
+             <ul class="govuk-list govuk-!-font-size-16">
+               <li>
+                 <a href="rules-collection-3">
+                   Rules for farmers and land managers
+                 </a>
+               </li>
+
+               <li>
+                 <a href="#" class="govuk-!-font-weight-bold">
+                   More <span class="govuk-visually-hidden">in Subsection</span>
+                 </a>
+               </li>
+             </ul>
+           </nav>
+         </aside>
+
+       </div>
+
+
+{% endblock %}

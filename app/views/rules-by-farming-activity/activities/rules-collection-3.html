@@ -1,0 +1,609 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Storing manure
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Environment",
+        href: "#"
+      },
+      {
+        text: "Food and farming",
+        href: "farming-and-land-management"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Rules for farmers and land managers
+      </h1>
+
+      <p class="gem-c-lead-paragraph">What you must do when you keep livestock or manage land.</p>
+
+
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#keep-livestock">
+                Keep livestock
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#protect-animal-welfare">
+                Protect animal health and welfare
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#protect-environment">
+                Protect the environment if you keep livestock
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#manage-land">
+                Manage land that you own or occupy
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#pest-control">
+                Use pest control products
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#apply-products">
+                Apply products to your land
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#produce-plant-varieties">
+                Produce plant varieties and seeds
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#protect-landscape-features">
+                Protect landscape features
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#manage-trees">
+                Manage trees and woodland
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#manage-water">
+                Manage water
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#manage-and-dispose-of-waste">
+                Manage and dispose of waste
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#make-compost">
+                Make compost, biogas, fertiliser or animal feed
+              </a>
+            </li>
+
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#get-advice">
+                Get advice
+              </a>
+            </li>
+
+
+
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+      <div class="govuk-inset-text">
+
+      <div class="call-to-action">
+
+      <p class="govuk-body">This is a new page – give your <a class="govuk-link" href="#">feedback</a> to help us improve it.</p>
+
+      </div>
+      </div>
+
+
+        <p class="govuk-!-margin-bottom-3"></p>
+
+      <p class="govuk-body">There are legal requirements around certain farming activities to protect people, livestock and the environment. This page can help you find the rules that apply to you.</p>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+      <h2 id="keep-livestock" class="govuk-heading-m">Keep livestock</h2>
+          <p class="govuk-body">What you must do when you keep livestock.</p>
+
+
+              <ul class="govuk-list">
+
+                    <li class="govuk-!-margin-bottom-3">
+
+                <a href="safe-food"><strong>Food safety - farmer responsibilities</strong></a></li>
+
+
+                      <li class="govuk-!-margin-bottom-3">
+
+                        <a class="govuk-link" href="https://www.gov.uk/government/collections/keeping-cattle-bison-and-buffalo-in-england-and-wales">Keeping cattle, bison and buffalo in England and Wales</a>
+
+                    </li>
+
+                    <li class="govuk-!-margin-bottom-3">
+
+                <a href="https://hse.gov.uk/pubns/ais17ew.htm">Cattle and public access in England and Wales</a></li>
+
+
+
+                    <li class="govuk-!-margin-bottom-3">
+
+                            <a class="govuk-link" href="https://www.gov.uk/government/collections/keeping-sheep-and-goats-in-england">Keeping sheep and goats in England</a>
+
+                        </li>
+                        <li class="govuk-!-margin-bottom-3">
+
+                                <a class="govuk-link" href="https://www.gov.uk/government/collections/keeping-pigs-in-england">Keeping pigs in England</a>
+
+                            </li>
+                            <li class="govuk-!-margin-bottom-3">
+
+                                    <a class="govuk-link" href="https://www.gov.uk/government/collections/deer-keepers-tagging-deer-and-reporting-their-movements">Deer keepers: tagging deer and reporting their movements</a>
+
+                                </li>
+
+                                <li class="govuk-!-margin-bottom-3">
+
+                                                    <a class="govuk-link" href="dairy-rules-collection"><strong>Keep animals to produce milk and dairy products</strong></a></li>
+
+
+                                                          <li class="govuk-!-margin-bottom-3">
+
+                                                          <a class="govuk-link" href="poultry-rules-collection"><strong>Keeping poultry in England<strong></a>
+                                                          </li>
+
+                                  <li class="govuk-!-margin-bottom-3">
+
+                                    <a class="govuk-link" href="slurry-activity-collection"><strong>Storing manure, slurry and silage<strong></a>
+                                                          </li>
+                                                        </ul>
+
+
+
+
+
+
+
+                            <h2 id="protect-animal-welfare" class="govuk-heading-m">Protect animal health and welfare</h2>
+                            <p class="govuk-body">What you must know about animal welfare, feed, disease and use of medicines.</p>
+                            <ul class="govuk-list">
+
+                              <li class="govuk-!-margin-bottom-3">
+
+                              <a class="gem-c-document-list__item   govuk-link" href="https://www.gov.uk/guidance/animal-welfare">Animal welfare</a>
+
+                              </li>
+
+                                <li class="govuk-!-margin-bottom-3">
+
+                                <a class="gem-c-document-list__item   govuk-link" href="feed-rules"><strong>Animal feed rules for livestock farmers</strong></a>
+                                </li>
+
+
+                                    <li class="govuk-!-margin-bottom-3">
+
+                                                <a class="gem-c-document-list__item   govuk-link" href="https://www.gov.uk/government/collections/notifiable-diseases-in-animals">Report notifiable diseases in animals</a>
+
+                                            </li>
+
+
+                                    <li class="govuk-!-margin-bottom-3">
+
+                                            <a class="gem-c-document-list__item   govuk-link" href="https://www.gov.uk/government/publications/responsible-use-of-animal-medicines-on-the-farm">Responsible use of animal medicines on the farm</a>
+                                    </li>
+
+                                    <li class="govuk-!-margin-bottom-3">
+                                          <a href="https://www.gov.uk/guidance/disease-prevention-for-livestock-farmers">Disease prevention for livestock and poultry keepers</a></li>
+
+                                          <li class="govuk-!-margin-bottom-3">
+
+                                              <a class="gem-c-document-list__item   govuk-link" href="https://www.gov.uk/guidance/bovine-tb-getting-your-cattle-tested-in-england">Bovine TB: get your cattle tested in England</a></li>
+                    </ul>
+
+
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                          <h2 id="protect-environment" class="govuk-heading-m">Protect the environment if you keep livestock</h2>
+                          <p class="govuk-body">What you must do to avoid pollution from animals, manure and silage.</p>
+
+                          <ul class="govuk-list">
+
+                            <li class="govuk-!-margin-bottom-3">
+
+                                    <a class="govuk-link" href="https://www.gov.uk/guidance/pigs-and-poultry-intensive-farming-environmental-permits">Pigs and poultry intensive farming: environmental permits</a>
+
+                                </li>
+
+                            <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link" href="https://www.gov.uk/guidance/rules-for-farmers-and-land-managers-to-prevent-water-pollution#manage-livestock">Make sure animal activities do not damage soil</a>
+
+                          </li>
+
+                          <li class="govuk-!-margin-bottom-3">
+
+                          <a class="govuk-link" href="https://www.gov.uk/guidance/storing-organic-manures-in-nitrate-vulnerable-zones">Store organic manures in nitrate vulnerable zones</a>
+
+                            </li>
+
+                            <li class="govuk-!-margin-bottom-3">
+
+                                    <a class="govuk-link" href="https://www.gov.uk/guidance/storing-silage-slurry-and-agricultural-fuel-oil">Store slurry, silage and agricultural fuel oil safely</a>
+
+                                </li>
+
+                            </ul>
+
+
+
+
+
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                    <h2 id="manage-land" class="govuk-heading-m">Manage land that you own or occupy</h2>
+                    <p class="govuk-body">What you must do to protect land and manage public access.</p>
+
+                    <ul class="govuk-list">
+
+
+                    <li class="govuk-!-margin-bottom-3">
+
+                    <a class="govuk-link" href="https://www.gov.uk/guidance/rules-for-farmers-and-land-managers-to-prevent-water-pollution#prevent-erosion-manage-livestock-and-soil">Manage farming and horticultural activities to prevent soil erosion and water pollution</a>
+                    </li>
+
+                        <li class="govuk-!-margin-bottom-3">
+
+                        <a class="govuk-link" href="https://www.gov.uk/guidance/public-rights-of-way-landowner-responsibilities">Public rights of way: landowner responsibilities</a>
+
+                        </li>
+
+                          <li class="govuk-!-margin-bottom-3">
+
+                          <a class="govuk-link" href="https://www.gov.uk/guidance/open-access-land-management-rights-and-responsibilities">Open access land: management, rights and responsibilities</a>
+
+                          </li>
+
+                              <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link" href="https://www.gov.uk/guidance/manage-your-land-on-the-england-coast-path">Coastal margin: management, rights and responsibilities</a>
+
+                              </li>
+
+                              <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link" href="https://www.gov.uk/guidance/protected-areas-sites-of-special-scientific-interest">Sites of special scientific interest: manage sites you own or occupy</a>
+
+                              </li>
+
+                              <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link" href="https://www.gov.uk/guidance/heather-and-grass-burning-apply-for-a-licence">Heather and grass burning: rules and when you need a licence</a>
+
+                              </li>
+
+                                <li class="govuk-!-margin-bottom-3">
+
+                                        <a class="govuk-link" href="https://www.gov.uk/guidance/eia-agriculture-regulations-apply-to-make-changes-to-rural-land">Change or improve rural land: check if you need to apply for an Environmental Impact Assessment</a>
+
+
+
+                                    </li>
+
+                  </ul>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                  <h2 id="pest-control" class="govuk-heading-m">Use pest control products</h2>
+                  <p class="govuk-body">What you must do when you buy, move, use or store pesticides.</p>
+
+                  <ul class="govuk-list">
+
+
+                                        <li class="govuk-!-margin-bottom-3">
+
+                                          <a class="govuk-link" href="https://www.gov.uk/government/publications/professional-plant-protection-products-ppps-register-as-a-user">Register as a professional user of plant protection products</a>
+
+                                      </li>
+
+                                        <li class="govuk-!-margin-bottom-3">
+
+                                          <a class="govuk-link" href="https://www.hse.gov.uk/agriculture/topics/pesticides.htm">Use, transport or store pesticides safely</a>
+
+                                      </li>
+
+                                        <li class="govuk-!-margin-bottom-3">
+
+                                          <a class="govuk-link" href="https://www.hse.gov.uk/pesticides/using-pesticides/codes-of-practice/code-of-practice-for-using-plant-protection-products.htm">Code of practice for using plant protection products: what you legally have to do</a>
+
+                                      </li>
+
+                  </ul>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                    <h2 id="apply-products" class="govuk-heading-m">Apply products to your land</h2>
+
+                    <p class="govuk-body">When you can spread fertiliser, manure or waste on your land and the restrictions that apply if you burn crop residues. </p>
+
+                    <ul class="govuk-list">
+
+
+                        <li class="govuk-!-margin-bottom-3">
+
+                        <a class="govuk-link" href="https://www.gov.uk/guidance/rules-for-farmers-and-land-managers-to-prevent-water-pollution#assess-pollution-risks">Plan your use of fertiliser or manure to reduce water pollution</a>
+
+                       </li>
+
+
+
+                              <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link" href="https://www.gov.uk/government/collections/nitrate-vulnerable-zones#rules-you-must-follow">Nitrate vulnerable zones: rules when you use fertilisers or store manure</a>
+
+                                </li>
+
+                                  <li class="govuk-!-margin-bottom-3">
+
+                                          <a class="govuk-link" href="https://www.gov.uk/government/publications/sewage-sludge-in-agriculture-code-of-practice">Use sewage sludge on your land</a>
+
+                                        </li>
+
+                                          <li class="govuk-!-margin-bottom-3">
+
+                                                  <a class="govuk-link" href="https://www.gov.uk/guidance/waste-exemption-u10-spreading-waste-to-benefit-agricultural-land">Waste exemption: spread waste to benefit your land</a>
+
+                                                </li>
+                                                <li class="govuk-!-margin-bottom-3">
+
+                                                        <a class="govuk-link" href="apply-slurry-manure-collection"><strong>Apply slurry, manure or fertiliser</strong></a>
+
+                                                      </li>
+
+
+
+                                                  <li class="govuk-!-margin-bottom-3">
+
+                                                  <a class="govuk-link" href="https://www.gov.uk/guidance/burning-crop-residues-restrictions-and-rules-for-farmers-and-land-managers">Burning crop residues: restrictions and rules for farmers and land managers</a>
+
+                                                </li>
+                    </ul>
+
+
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                                  <h2 id="produce-plant-varieties" class="govuk-heading-m">Produce plant varieties and seeds</h2>
+                                  <p class="govuk-body">What you must know about plant breeders rights, getting seeds certified to sell, licences, farm saved seed and selling seed potatoes.</p>
+
+                                  <ul class="govuk-list">
+
+                                      <li class="govuk-!-margin-bottom-3">
+                                          <a class="govuk-link" href="https://www.gov.uk/government/collections/guides-and-forms-for-plant-varieties-and-seeds-applications">Guides and forms for plant varieties and seeds applications</a>
+                                      </li>
+                                  </ul>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                    <h2 id="protect-landscape-features" class="govuk-heading-m">Protect landscape features</h2>
+                    <p class="govuk-body">What you must know before you start work on hedges or sites that are legally protected because of their historical importance.</p>
+
+                    <ul class="govuk-list">
+
+
+                          <li class="govuk-!-margin-bottom-3">
+
+                                  <a class="govuk-link" href="https://www.gov.uk/guidance/countryside-hedgerows-regulation-and-management">Hedgerows: find out if you can remove or carry out work</a>
+
+                              </li>
+
+            <li class="govuk-!-margin-bottom-3">
+
+            <a class="govuk-link" href="https://www.gov.uk/protecting-rural-landscapes-and-features/scheduled-monuments">Get permission before you work on scheduled monuments</a>
+            </li>
+
+            </ul>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+
+
+
+                  <h2 id="manage-trees" class="govuk-heading-m">Manage trees and woodland</h2>
+                  <p class="govuk-body">What you must know about planting, felling and keeping trees healthy.</p>
+
+                  <ul class="govuk-list">
+
+                      <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link" href="https://www.gov.uk/government/publications/a-guide-to-planning-new-woodland-in-england">A guide to planning new woodland in England</a>
+
+                          </li>
+
+
+                            <li class="govuk-!-margin-bottom-3">
+
+                                    <a class="govuk-link" href="https://www.gov.uk/guidance/tree-felling-overview">Tree felling overview</a>
+                                </li>
+
+                                  <li class="govuk-!-margin-bottom-3">
+
+                                          <a class="govuk-link" href="https://www.gov.uk/government/collections/tree-pests-and-diseases">Tree pests and diseases</a>
+
+                                      </li>
+
+                                        <li class="govuk-!-margin-bottom-3">
+
+                                                <a class="govuk-link" href="https://www.gov.uk/guidance/environmental-impact-assessments-for-woodland">Plan woodland projects: check if you need to apply for an Environmental Impact Assessment</a>
+
+                                            </li>
+
+                  </ul>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+
+
+                      <h2 id="manage-water" class="govuk-heading-m">Manage water</h2>
+                      <p class="govuk-body">What you can do around watercourses and what permissions you need.</p>
+
+                      <ul class="govuk-list">
+        <li class="govuk-!-margin-bottom-3">
+
+        <a class="govuk-link" href="https://www.gov.uk/guidance/owning-a-watercourse">Maintain watercourses and understand permissions you need to work around them</a>
+              </li>
+
+                <li class="govuk-!-margin-bottom-3">
+
+                <a class="govuk-link" href="https://www.gov.uk/guidance/check-if-you-need-a-licence-to-abstract-water">Check if you need a licence to abstract water</a>
+
+                </li>
+
+            </ul>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+
+                        <h2 id="manage-and-dispose-of-waste" class="govuk-heading-m">Manage and dispose of waste</h2>
+                        <p class="govuk-body">What you must do with hazardous waste, such as chemical containers and sheep dip.</p>
+
+                        <ul class="govuk-list">
+
+                                <li class="govuk-!-margin-bottom-3">
+
+                                <a class="govuk-link" href="https://www.gov.uk/guidance/manage-waste-on-land-guidance-for-land-managers">Manage waste on land: guidance for land managers</a>
+
+
+                              </li>
+
+                                    <li class="govuk-!-margin-bottom-3">
+
+                                            <a class="govuk-link" href="https://www.gov.uk/guidance/discharges-to-surface-water-and-groundwater-environmental-permits">Discharges to surface water and groundwater: environmental permits</a>
+
+                                    </li>
+
+                                    <li class="govuk-!-margin-bottom-3">
+
+                                            <a class="govuk-link" href="https://www.gov.uk/guidance/sheep-dip-groundwater-protection-code">Sheep dip: groundwater protection code</a>
+
+                                    </li>
+
+
+                        </ul>
+
+                        <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                                      <h2 id="make-compost" class="govuk-heading-m">Make compost, biogas, fertiliser or animal feed</h2>
+                                      <p class="govuk-body">What you must do when working with materials that come from animals but are not for human consumption.</p>
+
+                                      <ul class="govuk-list">
+
+
+                                      <li class="govuk-!-margin-bottom-3">
+
+                                              <a class="govuk-link" href="https://www.gov.uk/government/collections/guidance-for-the-animal-by-product-industry">Guidance for the animal by-products industry</a>
+
+
+                                      </li>
+
+                                                          </ul>
+
+
+                        <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+
+
+
+        <div class="govuk-!-padding-bottom-3"></div>
+
+                <h2 id="get-advice" class="govuk-heading-m">Get advice<h2>
+
+                <p class="govuk-body">
+                  Get advice from Defra or the <a href="https://www.gov.uk/government/groups/farming-advice-service">Farming Advice Service</a>.
+
+
+
+
+     <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+  <!--    {{ govukPagination({
+        previous: {
+          labelText: "Page 1 title",
+          href: "#"
+        },
+        next: {
+          labelText: "Page 3 title",
+          href: "#"
+        }
+      }) }}
+
+      <p>
+        <a href="#">
+          View a printable version of the whole guide
+        </a>
+      </p>-->
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="rules-collection-3">
+                Rules for farmers and land managers
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
