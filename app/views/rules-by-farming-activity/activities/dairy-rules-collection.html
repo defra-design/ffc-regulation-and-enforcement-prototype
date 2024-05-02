@@ -1,65 +1,182 @@
-{% extends "../layouts/GUIDANCEdairyrulescollection.html" %}
+{% extends "layouts/main.html" %}
 
-{% block guidance %}
-<div id="toc" class="toc govuk-!-margin-bottom-9"></div>
+{% block pageTitle %}
+  Rules for dairy farmers
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Environment",
+        href: "#"
+      },
+      {
+        text: "Food and farming",
+        href: "#"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="gem-c-title__context">
+        Collection
+      </p>
+      <h1 class="govuk-heading-xl">
+        Rules for dairy farmers
+      </h1>
+        <p class="gem-c-lead-paragraph">
+          What dairy farmers must do when they produce milk or milk products.
+        </p>
 
 
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#before-you-produce-milk">
+                Before you can produce milk and milk products
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#keep-dairy-cattle">
+                Keeping dairy cattle
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#produce-safe-milk">
+                Produce safe-to-eat milk products
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
 
-              <h2 id="new-dairy-business" class="govuk-heading-m">Before you can produce milk and milk products</h2>
-                  <p class="govuk-body">You must tell us about the holding where you intend to produce milk or milk products.</p>
+    </div>
 
-                      <ul class="govuk-list">
+  </div>
 
-                                <li class="govuk-!-margin-bottom-3">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
 
-                                  <a rel="external" href="https://www.gov.uk/register-milk-production-holding/food-standards-agency">Application to register a milk production holding (England and Wales)</a></li>
+      <div class="govuk-inset-text">
 
+      <div class="call-to-action">
 
-                      </ul>
+      <p class="govuk-body">This is a new page – give your <a class="govuk-link" href="#">feedback</a> to help us improve it.</p>
 
-            <h2 id="keep-dairy-cattle" class="govuk-heading-m">Keeping dairy cattle</h2>
-                <p class="govuk-body">What you must know about cattle welfare. </p>
+      </div>
+      </div>
 
-                <ul class="govuk-list">
-
-
-                  <li class="govuk-!-margin-bottom-3">
-
-                  <a class="gem-c-document-list__item   govuk-link" href="https://www.gov.uk/guidance/animal-welfare">Animal welfare</a>
-
-                  </li>
-
-                  <li class="govuk-!-margin-bottom-3">
-
-                    <a class="govuk-link" href="https://www.gov.uk/guidance/farm-animals-looking-after-their-welfare">Farm animals: looking after their welfare</a>
-
-                  </li>
-                  <li class="govuk-!-margin-bottom-3">
-                    <a class="govuk-link" href="https://www.gov.uk/government/publications/code-of-recommendations-for-the-welfare-of-livestock-cattle">Beef cattle and dairy cows: on-farm welfare</a>
-
-                  </li>
-
-
-                </ul>
-
-            <h2 id="produce-safe-milk" class="govuk-heading-m">Produce safe-to-eat milk products</h2>
-              <p class="govuk-body">What you must do on farm to keep food production safe. </p>
+      <h2 id="before-you-produce-milk" class="govuk-heading-m">Before you can produce milk and milk products</h2>
+          <p class="govuk-body">You must tell us about the holding where you intend to produce milk or milk products.</p>
 
               <ul class="govuk-list">
 
                         <li class="govuk-!-margin-bottom-3">
-                                      <a class="govuk-link" rel="external" href="https://www.food.gov.uk/sites/default/files/media/document/milk-producer-guide-v4.pdf">A Practical Guide for Milk Producers</a></li>
 
-                        <li class="govuk-!-margin-bottom-3">
-
-                                      <a class="govuk-link" rel="external" href="https://www.food.gov.uk/business-guidance/milk-hygiene-and-antibiotic-residues">Milk hygiene and antibiotic residues</a></li>
+                          <a rel="external" href="https://www.gov.uk/register-milk-production-holding/food-standards-agency">Application to register a milk production holding (England and Wales)</a></li>
 
 
-                        <li class="govuk-!-margin-bottom-3">
+              </ul>
 
-                                      <a class="govuk-link"  rel="external" href="https://www.food.gov.uk/business-guidance/raw-drinking-milk-guidance">Raw drinking milk producers</a></li>
+    <h2 id="keep-dairy-cattle" class="govuk-heading-m">Keeping dairy cattle</h2>
+        <p class="govuk-body">What you must know about cattle welfare. </p>
+
+        <ul class="govuk-list">
+
+
+          <li class="govuk-!-margin-bottom-3">
+
+          <a class="gem-c-document-list__item   govuk-link" href="https://www.gov.uk/guidance/animal-welfare">Animal welfare</a>
+
+          </li>
+
+          <li class="govuk-!-margin-bottom-3">
+
+            <a class="govuk-link" href="https://www.gov.uk/guidance/farm-animals-looking-after-their-welfare">Farm animals: looking after their welfare</a>
+
+          </li>
+          <li class="govuk-!-margin-bottom-3">
+            <a class="govuk-link" href="https://www.gov.uk/government/publications/code-of-recommendations-for-the-welfare-of-livestock-cattle">Beef cattle and dairy cows: on-farm welfare</a>
+
+          </li>
+
+
+        </ul>
+
+    <h2 id="produce-safe-milk" class="govuk-heading-m">Produce safe-to-eat milk products</h2>
+      <p class="govuk-body">What you must do on farm to keep food production safe. </p>
+
+      <ul class="govuk-list">
+
+                <li class="govuk-!-margin-bottom-3">
+                              <a class="govuk-link" rel="external" href="https://www.food.gov.uk/sites/default/files/media/document/milk-producer-guide-v4.pdf">A Practical Guide for Milk Producers</a></li>
+
+                <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link" rel="external" href="https://www.food.gov.uk/business-guidance/milk-hygiene-and-antibiotic-residues">Milk hygiene and antibiotic residues</a></li>
+
+
+                <li class="govuk-!-margin-bottom-3">
+
+                              <a class="govuk-link"  rel="external" href="https://www.food.gov.uk/business-guidance/raw-drinking-milk-guidance">Raw drinking milk producers</a></li>
+    </ul>
+
+
+
+
+      </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="rules-for-farmers-and-land-managers">
+                Rules for farmers and land managers
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gov.uk/guidance/funding-for-farmers">
+                Funding for farmers, growers and land managers
+              </a>
+            </li>
+
           </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </main>
+</div>
 
 
+
+
+
+    </div>
+  </div>
 
 {% endblock %}
