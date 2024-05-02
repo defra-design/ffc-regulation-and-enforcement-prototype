@@ -1,0 +1,254 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Plan before applying manure or slurry
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Environment",
+        href: "#"
+      },
+      {
+        text: "Farming and land management",
+        href: "farming-and-land-management"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-caption-xl c-title__context">
+        Guidance
+      </p>
+      <h1 class="govuk-heading-xl">
+        Plan before applying manure, slurry or fertiliser
+      </h1>
+      <p>Farmers and land managers in a nitrate vulnerable zone must plan applications of manure, slurry and fertiliser. We reommend that you do this in areas that are not in a nitrate vulnerable zone too.</p>
+
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#legal-requirements">
+                Legal requirements
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+
+              <a href="#plan-your-use-of-manure-and-fertiliser">Plan your use of manure and fertiliser</a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#consider-the-risk-of-pollution">
+                Consider the risk of pollution
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#work-out-soil-and-crop-nutrient-needs">
+                Work out soil and crop nutrient needs
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#soil-tests">
+                Soil tests for cultivated agricultural land
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#view-the-legislation">
+                View the legislation
+              </a>
+            </li>
+
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+    <h2 id="legal-requirements" class="govuk-heading-m">Legal requirements</h2>
+
+      <p class="govuk-body">You must:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>plan your application of organic manures and manufactured fertilisers to cultivated land to meet soil and crop need</li>
+        <li>avoid causing significant risk of pollution</li>
+        <li>test cultivated agricultural soil for phosphorous, potassium, magnesium, pH and nitrogen levels at least every 5 years — you can use the soil nitrogen supply calculator to work out nitrogen levels instead of a soil test</li>
+        <li>use the results of these tests when you plan your applications to make sure you meet soil and crop nutrient needs</li>
+        <li>take into account the weather conditions and forecasts at the time you want to apply manure or fertiliser on your land</li>
+      </ul>
+
+      <h2 id="plan-your-use-of-manure-and-fertiliser" class="govuk-heading-m">Plan your use of manure and fertiliser</h2>
+
+      <p>Have a <a href="https://defrafarming.blog.gov.uk/sustainable-farming-incentive-pilot-guidance-create-and-use-a-nutrient-management-plan/">nutrient management plan</a>. What you include in the plan is up to you. Use the plan to inform decisions about your use of organic manure and manufactured fertiliser to give your crops the nutrients they need.</p>
+
+      <h2 id="consider-the-risk-of-pollution" class="govuk-heading-m">Consider the risk of pollution</h2>
+
+      <p class="govuk-body">You can create a farm map that identifies areas that could be at risk from runoff or soil erosion.</p>
+
+      <p class="govuk-body">Factors that could cause significant risk include:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>angle of slopes, in particular if the angle is greater than 12 degrees</li>
+        <li>amount of ground cover</li>
+        <li>distance to inland freshwaters, coastal waters, wetlands, springs, wells or boreholes</li>
+        <li>soil type and condition</li>
+        <li>presence and condition of land drains</li>
+      </ul>
+
+      <p class="govuk-body">Avoid loss of nutrients through runoff and incorporate applied organic manure and manufactured fertiliser into the soil within 12 hours or as soon as possible if you can. This does not apply to grassland.</p>
+
+      <h2 id="work-out-soil-and-crop-nutrient-needs" class="govuk-heading-m">Work out soil and crop nutrient needs</h2>
+
+      <p class="govuk-body">You should:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>plan what nutrients you are going to spread on the land</li>
+        <li>apply nutrients only in quantities that do not exceed the crop or soil need</li>
+        <li>use the results of soil sampling and analysis or a soil nitrogen supply assessment to work out how much to apply</li>
+      </ul>
+
+      <p class="govuk-body">When deciding what nutrients your crops need, you should use one of these:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a nutrient management guide, such as <a rel="external" href="https://ahdb.org.uk/nutrient-management-guide-rb209">RB209 from the Agriculture and Horticulture Development Board</a>
+      </li>
+        <li>farm software such as <a rel="external" href="https://www.planet4farmers.co.uk/Content.aspx?name=PLANET">PLANET</a> or <a rel="external" href="http://www.planet4farmers.co.uk/Manner.aspx">MANNER-NPK</a>
+      </li>
+        <li>nutrient management tools, such as those provided by <a rel="external" href="http://www.nutrientmanagement.org/what-we-do/tools/">Tried and Tested</a> including a <a rel="external" href="https://www.nutrientmanagement.org/what-we-do/calculators-and-estimators/">soil nitrogen supply calculator</a>
+      </li>
+        <li>a suitably qualified professional, such as an agronomist or Fertiliser Advisers Certification and Training Scheme (FACTS) adviser</li>
+      </ul>
+
+      <p>You can identify the nutrient content of organic manure using nutrient management tools or manure testing, such as laboratory analysis or near infra-red sensors for liquid manures.</p>
+
+      <h2 id="soil-tests" class="govuk-heading-m">Soil tests for cultivated agricultural land</h2>
+
+        <p>If you’re applying manure or fertiliser to cultivated agricultural land, you must also plan by using the results of soil tests.</p>
+
+        <p>Cultivated agricultural land is both or one of the following:</p>
+
+        <ul>
+          <li>
+            land you’ve ploughed, sowed or harvested at least once in the last year
+          </li>
+          <li>
+            land where you’ve applied organic manure or fertiliser at least once in the last 3 years
+          </li>
+        </ul>
+
+        <p>The results of soil tests must show the pH and levels of:</p>
+
+        <ul>
+          <li>
+            nitrogen – you can use a soil nitrogen supply calculator instead of a soil test
+          </li>
+          <li>phosphorus
+          </li>
+          <li>potassium</li>
+          <li>magnesium</li>
+        </ul>
+        <p>Soil test results must be no more than 5 years old at the time of application.</p>
+
+
+
+      <h2 id="view-the-legislation" class="govuk-heading-m">View the legislation</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          The Reduction and Prevention of Agricultural Diffuse Pollution (England) Regulations 2018
+        </li>
+      </ul>
+
+      <h3 id="other-related-legislation" class="govuk-heading-s">
+      Other related legislation</h3>
+
+      <p class="govuk-body">If your farm is in a <a href="https://www.gov.uk/government/collections/nitrate-vulnerable-zones">nitrate vulnerable zone</a> there are additional rules to follow.</p>
+
+
+      </div>
+
+
+      <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+    <!--  {{ govukPagination({
+        previous: {
+          labelText: "Page 1 title",
+          href: "#"
+        },
+        next: {
+          labelText: "Page 3 title",
+          href: "#"
+        }
+      }) }}
+
+      <p>
+        <a href="#">
+          View a printable version of the whole guide
+        </a>
+      </p>-->
+
+
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

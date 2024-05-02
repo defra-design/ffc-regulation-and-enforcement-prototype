@@ -1,0 +1,300 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Mainstream guide example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Section",
+        href: "#"
+      },
+      {
+        text: "Subsection"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-caption-xl c-title__context">
+        Guidance
+      </p>
+      <h1 class="govuk-heading-xl">
+        Applying manure or slurry to land
+      </h1>
+      <p class="gem-c-lead-paragraph">What you must do to plan for and apply manure or slurry. How to protect water and the environment from run off and leaching.</p>
+
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="plan-manure-applications">
+                Plan your use of manure or slurry
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="assess-risk-of-pollution">Assess risks of causing pollution
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#">
+                Page 3
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+        <p>You must take steps to prevent manure getting into watercourses – known as diffuse water pollution (pollution).</p>
+
+        <p>Organic manures are made from one or more animal, plant or human sources.</p>
+
+        <p>These rules apply to farming or horticultural practices that involve the use and storage of organic manure (manure).</p>
+
+        <h2 id="plan-manure-applications" class="govuk-heading-m">Plan your use of manure or slurry</h2>
+
+        <p>You must plan each application of slurry and organic manure on your land so that they do not give rise to a significant risk of pollution.</p>
+
+        <p>Applying includes:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>spreading on the surface of the land</li>
+          <li>injecting into the soil</li>
+          <li>mixing manure with the surface layers of soil</li>
+        </ul>
+
+        <p>For all farming and horticultural land, you must plan:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>how much manure to use, so you do not use more than your soil and crop needs</li>
+          <li>and take into account fertilser applications</li>
+          <li>by assessing the pollution risks</li>
+        </ul>
+
+        <p>You can use the Nutrient Management Guide RB209 on the Agriculture and Horticulture Development Board website to work out the nutrients your soil or crop needs.</p>
+
+        <h2 id="soil-tests" class="govuk-heading-m">Soil tests for cultivated agricultural land</h2>
+
+        <p>If you’re appyling manure to cultivated agricultural land, you must also plan by using the results of soil test results.</p>
+
+        <p>Cultivated agricultural land is both or one of:</p>
+        <ul class="govuk-list govuk-list--bullet">
+
+            <li>land you’ve ploughed, sowed or harvested at least once in the last year</li>
+            <li>land where you’ve applied organic manure or fertiliser at least once in the last 3 years</li>
+        </ul>
+        <p>The results of soil tests must show the pH and levels of:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>nitrogen (N) - you  can use a soil nitrogen supply calculator instead of a soil test</li>
+          <li>phosphorus (P)</li>
+          <li>potassium (K)</li>
+          <li>magnesium (Mg)</li>
+        </ul>
+        <p>Soil test results must be no more than 5 years old at the time of application.</p>
+
+        <p>When deciding what nutrients your crops need, you should use one of these:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>a nutrient management guide, such as <a href="https://ahdb.org.uk/nutrient-management-guide-rb209">RB209 from the Agriculture and Horticulture Development Board</a></li>
+          <li>farm software such as <a href="https://www.planet4farmers.co.uk/Content.aspx?name=PLANET">PLANET</a> or  <a href="http://www.planet4farmers.co.uk/Manner.aspx">MANNER-NPK</a></li>
+          <li>nutrient management tools, such as those provided by <a href="http://www.nutrientmanagement.org/what-we-do/tools/">Tried and Tested</a> including a < a href="https://www.nutrientmanagement.org/what-we-do/calculators-and-estimators/">soil nitrogen supply calculator</a>x</li>
+          <li>a suitably qualified professional, such as an agronomist or Fertiliser Advisers Certification and Training Scheme (FACTS) adviser</li>
+        </ul>
+
+        <p>You can identify the nutrient content of organic manure using nutrient management tools or manure testing, such as laboratory analysis or near infra-red sensors for liquid manures.</p>
+
+        <p>Planning can:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>help you optimise the timing and number of applications
+          <li>save you money as you use less manufactured fertiliser
+          <li>reduce the risk of diffuse pollution and improve water quality in your area
+        </ul>
+
+        <h2 id="assess=risk-of-pollution" class="govuk-heading-m">Assess risks of causing pollution</h2>
+
+        <p>You must take reasonable precautions to reduce the risk of pollution when you apply manure.</p>
+
+        <p>Examples include:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>taking into account the weather conditions and forecasts at the time you want to apply manure on your land</li>
+          <li>checking your spreading equipment is calibrated and does not leak</li>
+          <li>checking the presence and condition of land drains</li>
+          <li>working manure into the soil as soon as possible after applying it - this does not apply to grassland</li>
+          <li>checking the organic matter content and moisture level in your soil – you can use the Nutrient Management Guide RB209 on the Agriculture and Horticulture Development Board website or other resources to help you do this</li>
+        </ul>
+
+        <h2 id="show-planned-applications" class="govuk-heading-m">Recommended actions to show you’ve planned applications of manure</h2>
+
+        <p>To show that you have planned for crop and soil need:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>produce a written nutrient management plan and update it every year</li>
+            <li>keep field records showing crop type and what organic and manufactured fertilisers you’ve applied</li>
+            <li>use a recognised planning tool or a FACTS qualified advisor</li>
+         </ul>
+
+        <p>Produce a risk map of the farm showing areas where manure can and can’t be spread. You may find it useful to include where you have:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>sloping land</li>
+            <li>watercourses and land drains</li>
+            <li>different soil types</li>
+          </ul>
+        <p>Calculate your Livestock Manure Nitrogen Farm limit (must be less than 170kgN/ha).</p>
+
+        <p>Check the current ground conditions. Be prepared to postpone if the conditions are not right on the day.</p>
+
+        <h2 id="applying-manure" class="govuk-heading-m">Applying manure</h2>
+
+        <p>You must not apply manure:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>on soil that is waterlogged, flooded or snow covered</li>
+            <li>when the soil has been frozen for more than 12 hours in the previous 24 hours</li>
+            <li>within 10m of any inland freshwaters or coastal waters</li>
+            <li>within 50m of a spring, well or borehole</li>
+            <li>if there is no crop or soil need – in most cases there is no crop or soil need in autumn and winter</li>
+            <li>where the risk factors mean there’s a significant risk of pollution</li>
+          </ul>
+
+        <h3 id="6m-exception" class="govuk-heading-s">6m exception for precision equipment</h3>
+
+        <p>You can apply manure no closer than 6m from inland freshwaters or coastal waters if you use:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>a trailing hose or shoe band spreader</li>
+            <li>a shallow injector (no deeper than 10cm)</li>
+            <li>a dribble bar applicator</li>
+          </ul>
+
+        <h3 id="exception-environmental-benefit" class="govuk-heading-s">Exception for environmental benefit</h3>
+
+        <p>If you manage land for breeding wader birds or as a species-rich semi-natural grassland, you can apply livestock manure (not slurry or poultry) within 10m of inland freshwaters and coastal waters. You can only do this if:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the land is in an Environmental or Countryside Stewardship scheme or it’s a site of special scientific interest (SSSI)</li>
+            <li>you do not apply manure onto the surface of water</li>
+            <li>you only apply the manure from 1 June to 31 October</li>
+            <li>you apply no more than 12.5 tonnes per hectare per year</li>
+          </ul>
+
+          <h2 id="keep-records" class="govuk-heading-m">Keep records</h2>
+
+          <p>Record:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>where you’ve applied manure</li>
+            <li>risk factors in that area</li>
+            <li>what you’ve done to reduce the risk</li>
+            <li>when you applied the manure</li>
+            <li>the weather conditions at the time</li>
+            <li>any exceptions where you’ve used precision equipment or where on your land you’ve applied manures for environmental benefit</li>
+          </ul>
+
+          <h2 id="how-enforcement-works" class="govuk-heading-m">How enforcement will work<h2>
+
+          <p>If the Environment Agency finds you’re breaching the rules, it will help you by:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>identifying the changes you need to make</li>
+
+            <li>agreeing a timescale with you to make changes</li>
+          </ul>
+          <p>To check you’ve made changes, the Environment Agency may:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>give you a follow-up visit</li>
+                <li>ask for evidence, such as photographic evidence of a change</li>
+              </ul>
+
+          <p>If there’s already pollution or a high risk of pollution, the Environment Agency may take enforcement action. This may include prosecution.</p>
+
+          <h2 id="source-legislation" class="govuk-heading-m">Source legislation</h2>
+
+          <p>These rules are from The Reduction and Prevention of Agricultural Diffuse Pollution (England) Regulations 2018.</p>
+
+          <h3 class="govuk-heading-s">Other related regulations</h3>
+
+          <p>You can find more rules about manure and slurry in:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>Complying with landspreading permits details the types of materials that you can spread on your land</li>
+                <li>Storing manure</li>
+                <li>Nitrate vulnerable zones</li>
+              </ul>
+
+          <h2 id="get-advice" class="govuk-heading-m">Get advice</h2>
+
+<p>Contact the Environment Agency.</p>
+
+      <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+  <!--    {{ govukPagination({
+        previous: {
+          labelText: "Page 1 title",
+          href: "#"
+        },
+        next: {
+          labelText: "Page 3 title",
+          href: "#"
+        }
+      }) }}
+
+      <p>
+        <a href="#">
+          View a printable version of the whole guide
+        </a>
+      </p>-->
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Plan before applying manure or slurry
+              </a>
+            </li>
+            <li>
+              <a href="rules-collection">
+                Rules for farmers and land managers
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

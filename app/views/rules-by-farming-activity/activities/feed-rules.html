@@ -1,111 +1,232 @@
-{% extends "../layouts/GUIDANCEfeedrules.html" %}
+{% extends "layouts/main.html" %}
 
-{% block guidance %}
-<div id="toc" class="toc govuk-!-margin-bottom-9"></div>
+{% block pageTitle %}
+  Animal feed rules for livestock farmers
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Environment",
+        href: "#"
+      },
+      {
+        text: "Food and farming",
+        href: "#"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="gem-c-title__context">
+        Collection
+      </p>
+      <h1 class="govuk-heading-xl">
+        Animal feed rules for livestock farmers
+      </h1>
+        <p class="gem-c-lead-paragraph">
+          Make sure that food produced for humans to eat is safe.
+        </p>
 
 
-<li class="gem-c-document-list__item  ">
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#store-and-handle-feed">
+                Store and handle feed
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#act-on-official-controls">
+            Act on official controls
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#use-feed-additives">
+                Use feed additives, medicines and biocides correctly
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#adequate-measures">
+                Take measures to stop diseases passing to humans through food
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#use-feed-from-places">
+              Use feed from places that are registered or approved by your local authority
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#keep-records">
+                Keep records
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#arable-farms">
+                Arable farms growing, using or selling crops for feed
+              </a>
+            </li>
+              <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+                <a href="#risk-from-mycotoxins">
+                Risk from mycotoxins (mould or fungus) in animal feed
+                </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+      <h2 id="store-and-handle-feed" class="govuk-heading-m">Store and handle feed</h2>
+          <p class="govuk-body">To stop contamination and distribution errors:</p>
+          <ul class="govuk-list govuk-list--bullet">
 
 
-<!--<div class="govuk-inset-text">
+          <li>keep storage areas and containers clean and dry, in particular those used to contain medicated and non-medicated feed, and use appropriate pest-control measures where necessary</li>
 
-<div class="call-to-action">
+            <li>store seed properly and in such a way that it is not accessible to animals</li>
+            <li>handle medicated and non-medicated feeds separately</li>
+            <li>make sure the on-farm feed distribution system ensures that the right feed is sent to the right destination and does not get contaminated from storage areas and equipment</li>
+            <li>periodically cleaning on-farm feed transport vehicles and feeding equipment, in particular when used to deliver and distribute medicated feed</li>
 
-<p>This is a new page – give your <a class="govuk-link" href="#">feedback</a> to help us improve it.</p>
+          </ul>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+          <p class="govuk-body"><a class="govuk-link" href="https://www.fao.org/3/i1379e/i1379e.pdf">Good practices for the feed industry</a> from the Food and Agriculture Organisation</p>
 
+
+
+            <h2 id="act-on-official-controls" class="govuk-heading-m">Act on official controls</h2>
+                <p class="govuk-body">Act on results of official controls and sample analyses. Take appropriate remedial action when informed of problems identified during official controls.</p>
+
+                <h2 id="use-feed-additives" class="govuk-heading-m">Use feed additives, medicines and biocides correctly</h2>
+                    <p class="govuk-body">Use as prescribed or as stated on the label. Follow instructions for dosage, how to apply and storage.</p>
+
+                    <p class="govuk-body">Make sure that the food you produce does not contain residues that are higher than the permitted maximum residue level for the pesticide or medicine used.</p>
+
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                        <p class="govuk-body"><a class="govuk-link" href="https://www.fao.org/3/i1379e/i1379e.pdf">Good practices for the feed industry</a> from the Food and Agriculture Organisation</p>
+
+
+                <h2 id="adequate-measures" class="govuk-heading-m">Take measures to stop diseases passing to humans through food</h2>
+
+
+
+                    <p class="govuk-body">
+                      Take adequate measures to stop the introduction and spread of contagious diseases transmissible to humans through food. This includes:</p>
+
+
+                      <ul class="govuk-list govuk-list--bullet">
+
+                        <li>abiding by the statutory herd <a href="href="https://www.gov.uk/guidance/bovine-tb-getting-your-cattle-tested-in-england">testing for bovine tuberculosis</a> and pre-movement TB testing of animals</li>
+                        <li>compliance with any notice and instruction</li>
+                        <li>not moving animals subject to movement restrictions</li>
+                        <li>taking precautionary measures when introducing new animals</li>
+                        <li>reporting suspected disease outbreaks to the competent authority</li>
+                      </ul>
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <p class="govuk-body"><a class="gem-c-document-list__item   govuk-link" href="https://www.food.gov.uk/business-guidance/farmers-producing-animal-feed">Farmers producing animal feed</a></p>
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+
+        <p class="govuk-body">
+        <a href="https://www.gov.uk/guidance/manufacturing-and-supplying-veterinary-medicines-for-animal-feed">Manufacturing and supplying veterinary medicines for animal feed</a></p>
+
+                <h2 id="use-feed-from-places" class="govuk-heading-m">Use feed from places that are registered or approved by your local authority</h2>
+                  <p class="govuk-body">Or approved by the Veterinary Medicine Directorate (VMD) for specified feed additives.</p>
+
+                  <h2 id="keep-records" class="govuk-heading-m">Keep records</h2>
+                    <p class="govuk-body">You must keep records about:</p>
+
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>vet medicines or other treatments given to your animals (include the treatment dates and withdrawal periods)</li>
+                        <li>plant protection products and biocides</li>
+                        <li>results of analyses carried out on samples taken that have importance for human or animal health</li>
+                        <li>reports on checks on animals and animal products</li>
+                        <li>any use of <a href="https://www.food.gov.uk/business-guidance/gm-in-animal-feed">genetically modified seeds</a> in feed production</li>
+                    </ul>
+
+                        <p class="govuk-body">These rules do not apply to producers selling small amounts of primary products to final consumers or to local shops selling directly to final consumers.</p>
+
+
+                        <h2 id="arable-farms" class="govuk-heading-m">Arable farms growing, using or selling crops for feed</h2>
+
+                        <p class="govuk-body">You must register and apply for approval if you have an animal feed business that makes, markets or uses animal feed.</p>
+
+                        <ul class="govuk-list">
+
+                          <li class="govuk-!-margin-bottom-3">
+
+                          <a class="gem-c-document-list__item   govuk-link" href="https://www.food.gov.uk/business-guidance/starting-an-animal-feed-business">Starting an animal feed business</a>
+                          </li>
+      </ul>
+
+        <h2 id="risk-from-mycotoxins" class="govuk-heading-m">Risk from mycotoxins (mould or fungus) in animal feed</h2>
+      <p class="govuk-body">What you must know about mycotoxins and food safety.</p>
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+      <ul class="govuk-list">
+
+        <li class="govuk-!-margin-bottom-3"> <a class="gem-c-document-list__item   govuk-link" href="https://www.food.gov.uk/business-guidance/raising-awareness-and-mitigation-of-the-potential-risk-of-mycotoxins-in-animal-feed">Raising awareness and mitigation of the potential risk of mycotoxins (fungus) in animal feed</a>
+      </li>
+      </ul>
+
+
+      </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+        Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="rules-for-farmers-and-land-managers">
+                Rules for farmers and land managers
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gov.uk/guidance/funding-for-farmers">
+                Funding for farmers, growers and land managers
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </main>
 </div>
-</div>-->
-
-<p class="govuk-body"></p>
-
-<h2 id="store-and-handle-feed" class="govuk-heading-m">Store and handle feed</h2>
-    <p class="govuk-body">To stop contamination and distribution errors:</p>
-    <ul class="govuk-list govuk-list--bullet">
-
-
-    <li>keep storage areas and containers clean and dry, in particular those used to contain medicated and non-medicated feed, and use appropriate pest-control measures where necessary</li>
-
-      <li>store seed properly and in such a way that it is not accessible to animals</li>
-      <li>handle medicated and non-medicated feeds separately</li>
-      <li>make sure the on-farm feed distribution system ensures that the right feed is sent to the right destination and does not get contaminated from storage areas and equipment</li>
-      <li>periodically cleaning on-farm feed transport vehicles and feeding equipment, in particular when used to deliver and distribute medicated feed</li>
-
-    </ul>
-<hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-    <p class="govuk-body"><a class="govuk-link" href="https://www.fao.org/3/i1379e/i1379e.pdf">Good practices for the feed industry</a> from the Food and Agriculture Organisation</p>
 
 
 
-      <h2 id="act-on-official-controls" class="govuk-heading-m">Act on official controls</h2>
-          <p class="govuk-body">Act on results of official controls and sample analyses. Take appropriate remedial action when informed of problems identified during official controls.</p>
-
-          <h2 id="register-land" class="govuk-heading-m">Use feed additives, medicines and biocides correctly</h2>
-              <p class="govuk-body">Use as prescribed or as stated on the label. Follow instructions for dosage, how to apply and storage.</p>
-
-              <p class="govuk-body">Make sure that the food you produce does not contain residues that are higher than the permitted maximum residue level for the pesticide or medicine used.</p>
-
-              <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-                  <p class="govuk-body"><a class="govuk-link" href="https://www.fao.org/3/i1379e/i1379e.pdf">Good practices for the feed industry</a> from the Food and Agriculture Organisation</p>
 
 
-          <h2 id="adequate-measures" class="govuk-heading-m">Take adequate measures to stop the introduction and spread of contagious diseases transmissible to humans through food</h2>
-
-              <p class="govuk-body">This includes:</p>
-
-
-                <ul class="govuk-list govuk-list--bullet">
-
-                  <li>abiding by the statutory herd <a href="href="https://www.gov.uk/guidance/bovine-tb-getting-your-cattle-tested-in-england">testing for bovine tuberculosis</a> and pre-movement TB testing of animals</li>
-                  <li>compliance with any notice and instruction</li>
-                  <li>not moving animals subject to movement restrictions</li>
-                  <li>taking precautionary measures when introducing new animals</li>
-                  <li>reporting suspected disease outbreaks to the competent authority</li>
-                </ul>
-  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-  <p class="govuk-body"><a class="gem-c-document-list__item   govuk-link" href="https://www.food.gov.uk/business-guidance/farmers-producing-animal-feed">Farmers producing animal feed</a></p>
-  <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-
-  <p class="govuk-body">
-  <a href="https://www.gov.uk/guidance/manufacturing-and-supplying-veterinary-medicines-for-animal-feed">Manufacturing and supplying veterinary medicines for animal feed</a></p>
-
-          <h2 id="use-feed-from-places" class="govuk-heading-m">Use feed from places that are registered or approved by your local authority</h2>
-            <p class="govuk-body">Or approved by the Veterinary Medicine Directorate (VMD) for specified feed additives.</p>
-
-            <h2 id="keep-records" class="govuk-heading-m">Keep records</h2>
-              <p class="govuk-body">You must keep records about:</p>
-
-              <ul class="govuk-list govuk-list--bullet">
-                  <li>vet medicines or other treatments given to your animals (include the treatment dates and withdrawal periods)</li>
-                  <li>plant protection products and biocides</li>
-                  <li>results of analyses carried out on samples taken that have importance for human or animal health</li>
-                  <li>reports on checks on animals and animal products</li>
-                  <li>any use of <a href="https://www.food.gov.uk/business-guidance/gm-in-animal-feed">genetically modified seeds</a> in feed production</li>
-              </ul>
-
-                  <p class="govuk-body">These rules do not apply to producers selling small amounts of primary products to final consumers or to local shops selling directly to final consumers.</p>
-
-
-                  <h2 id="arable-farms" class="govuk-heading-m">Arable farms growing, using or selling crops for feed</h2>
-
-                  <p class="govuk-body">You must register and apply for approval if you have an animal feed business that makes, markets or uses animal feed.</p>
-
-                  <ul class="govuk-list">
-
-                    <li class="govuk-!-margin-bottom-3">
-
-                    <a class="gem-c-document-list__item   govuk-link" href="https://www.food.gov.uk/business-guidance/starting-an-animal-feed-business">Starting an animal feed business</a>
-                    </li>
-</ul>
-
-  <h2 id="risk-from-mycotoxins" class="govuk-heading-m">Risk from mycotoxins (mould or fungus) in animal feed</h2>
-<p class="govuk-body">What you must know about mycotoxins and food safety.</p>
-  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-<ul class="govuk-list">
-
-  <li class="govuk-!-margin-bottom-3"> <a class="gem-c-document-list__item   govuk-link" href="https://www.food.gov.uk/business-guidance/raising-awareness-and-mitigation-of-the-potential-risk-of-mycotoxins-in-animal-feed">Raising awareness and mitigation of the potential risk of mycotoxins (fungus) in animal feed</a>
-</li>
-</ul>
-
+    </div>
+  </div>
 
 {% endblock %}

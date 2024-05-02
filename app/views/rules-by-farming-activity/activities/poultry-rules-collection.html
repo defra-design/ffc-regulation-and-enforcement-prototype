@@ -1,275 +1,390 @@
-{% extends "../layouts/GUIDANCEpoultryrulescollection.html" %}
+{% extends "layouts/main.html" %}
 
-{% block guidance %}
-<div id="toc" class="toc govuk-!-margin-bottom-9"></div>
+{% block pageTitle %}
+Keeping poultry in England
+{% endblock %}
 
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
 
-<li class="gem-c-document-list__item  ">
+{% block beforeContent %}
 
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Environment",
+        href: "#"
+      },
+      {
+        text: "Food and farming",
+        href: "#"
+      }
+    ]
+  }) }}
 
-<div class="govuk-inset-text">
+{% endblock %}
 
-<div class="call-to-action">
+{% block content %}
 
-<p>This is a new page – give your <a class="govuk-link" href="#">feedback</a> to help us improve it.</p>
-
-</div>
-</div>
-
-
-  <p class="govuk-!-margin-bottom-3"></p>
-
-  <h2 id="register-to-keep-poultry" class="govuk-heading-m">Register to keep poultry</h2>
-  <p class="govuk-body">You must register if you keep more than 50 birds. You can register if you have less to get told about disease outbreaks in your area. </p>
-
-
-  <ul class="govuk-list">
-      <li class="govuk-!-margin-bottom-3">
-        <a class="govuk-link" href="https://www.gov.uk/government/publications/poultry-including-game-birds-registration-rules-and-forms">Register to keep poultry</a>
-      </li>
-
-  </ul>
-
-
-  <h2 id="keep-healthy-poultry" class="govuk-heading-m">Dealing with bird flu</h2>
-  <p class="govuk-body">What you must know about bird flu.</p>
-  <hr class="govuk-section-break govuk-section-break--s govuk-section-break">
-
-<ul class="govuk-list">
-
-  <li class="govuk-!-margin-bottom-3">
-  <a href="https://www.gov.uk/guidance/avian-influenza-bird-flu">Bird flu (avian influenza): how to spot and report it in poultry or other captive birds</a>
-  </li>
-  <li class="govuk-!-margin-bottom-3">
-  <a href="https://www.gov.uk/guidance/bird-flu-rules-if-you-keep-game-birds">Bird flu: rules if you keep game birds</a>
-  </li>
-
-
-<li class="govuk-!-margin-bottom-3">
-<a href="https://www.gov.uk/guidance/avian-influenza-bird-flu-cases-and-disease-control-zones-in-england">Bird flu: rules in disease control zones in England</a>
-</li>
-
-<li class="govuk-!-margin-bottom-3">
-<a href="https://www.gov.uk/guidance/apply-for-an-exemption-from-avian-influenza-disease-control-restrictions">Apply for an exemption from avian influenza disease control restrictions</a>
-</li>
-
-<li class="govuk-!-margin-bottom-3">
-    <a class="govuk-link" href="https://www.gov.uk/government/publications/bird-flu-licence-for-spreading-or-moving-used-poultry-litter-manure-and-slurry-from-a-protection-or-surveillance-zone-exd353hpaigb#:~:text=Statutory%20guidance-,Bird%20flu%3A%20licence%20for%20spreading%20or%20moving%20used%20poultry%20litter,zone%20or%20a%20surveillance%20zone.">Bird flu: licence for spreading or moving used poultry litter, manure and slurry from a protection or surveillance zone (EXD353(HPAI)(GB))</a>
-  </li>
-
-</ul>
-
-<h2 id="how-to-control-salmonella-in-poultry" class="govuk-heading-m">Test for salmonella in poultry</h2>
-
-<p class="govuk-body">You must test poultry (chicken and turkey) flocks to prevent and control the spread of infection. What you have to do depends on the number of birds you keep and what you produce.</p>
-
-  <h3 id="test-chickens" class="govuk-heading-s">Test your chickens</h3>
-
-<ul class="govuk-list">
-  <li class="govuk-!-margin-bottom-3">
-<a href="https://www.gov.uk/guidance/salmonella-get-your-breeding-chickens-tested">Chicken breeders: poultry testing for salmonella</a></li>
-<li class="govuk-!-margin-bottom-3">
-  <a href="https://www.gov.uk/guidance/salmonella-get-your-egg-laying-hens-tested">Laying hens and flocks: poultry testing for salmonella</a></li>
-  <li class="govuk-!-margin-bottom-3">
-<a href="https://www.gov.uk/guidance/salmonella-get-your-broiler-flock-chickens-tested">Salmonella: get your broiler flock chickens tested</a>
-</li>
-</ul>
-
-<h3 id="test-chickens" class="govuk-heading-s">Test your turkeys</h3>
-
-<ul class="govuk-list">
-  <li class="govuk-!-margin-bottom-3"><a href="https://www.gov.uk/guidance/salmonella-get-your-fattening-turkeys-tested">Salmonella: get your fattening turkeys tested</a></li>
-  <li class="govuk-!-margin-bottom-3"><a href="https://www.gov.uk/guidance/salmonella-get-your-breeding-turkeys-tested">Turkey breeders: poultry testing for salmonella</a></li>
-</ul>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="gem-c-title__context">
+        Collection
+      </p>
+      <h1 class="govuk-heading-xl">
+        Keeping poultry in England
+      </h1>
+        <p class="gem-c-lead-paragraph">
+          What you must know and do when you keep poultry.
+        </p>
 
 
-      <h2 id="keep-healthy-poultry" class="govuk-heading-m">Keep healthy poultry</h2>
-      <p class="govuk-body">What you must do to make sure birds are healthy.</p>
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#register-to-keep-poultry">
+                Register to keep poultry
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#dealing-with-bird-flu">
+                Dealing with bird flu
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#test-for-salmonella-in-poultry">
+                Test for salmonella in poultry
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#keep-healthy-poultry">
+                Keep healthy poultry
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#storing-poultry-manure">
+                Storing and spreading poultry manure
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#burning-poultry-manure">
+                Burning poultry manure
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="hold-a-bird-gathering">
+                Bird gatherings
+              </a>
+            </li>
+              <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+                <a href="#selling-eggs">
+                  Selling eggs
+                </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#importing-poultry">
+                Import eggs and chicks
+              </a>
+          </li>
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+            <a href="#exporting-poultry">
+                Export eggs and chicks
+            </a>
+          </li>
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+
+      <div class="govuk-inset-text">
+
+      <div class="call-to-action">
+
+      <p class="govuk-body">This is a new page – give your <a class="govuk-link" href="#">feedback</a> to help us improve it.</p>
+
+      </div>
+      </div>
+      <h2 id="register-to-keep-poultry" class="govuk-heading-m">Register to keep poultry</h2>
+      <p class="govuk-body">You must register if you keep more than 50 birds. You can register if you have less to get told about disease outbreaks in your area. </p>
+
+
+      <ul class="govuk-list">
+          <li class="govuk-!-margin-bottom-3">
+            <a class="govuk-link" href="https://www.gov.uk/government/publications/poultry-including-game-birds-registration-rules-and-forms">Register to keep poultry</a>
+          </li>
+
+      </ul>
+
+
+      <h2 id="dealing-with-bird-flu" class="govuk-heading-m">Dealing with bird flu</h2>
+      <p class="govuk-body">What you must know about bird flu.</p>
       <hr class="govuk-section-break govuk-section-break--s govuk-section-break">
 
-<ul class="govuk-list">
+    <ul class="govuk-list">
 
-          <li class="govuk-!-margin-bottom-3">
-            <a href="https://www.gov.uk/government/publications/poultry-on-farm-welfare">Poultry: on-farm welfare</a>
-          </lI>
+      <li class="govuk-!-margin-bottom-3">
+      <a href="https://www.gov.uk/guidance/avian-influenza-bird-flu">Bird flu (avian influenza): how to spot and report it in poultry or other captive birds</a>
+      </li>
+      <li class="govuk-!-margin-bottom-3">
+      <a href="https://www.gov.uk/guidance/bird-flu-rules-if-you-keep-game-birds">Bird flu: rules if you keep game birds</a>
+      </li>
 
-          <li class="govuk-!-margin-bottom-3">
-            <a href="https://www.gov.uk/guidance/poultry-welfare-off-the-farm">Poultry welfare off the farm</a>
-          </li>
 
-          <li class="govuk-!-margin-bottom-3">
-            <a href="https://food.gov.uk/business-guidance/poultry-farming-guidance">Poultry farming guidance</a>
-          </li>
+    <li class="govuk-!-margin-bottom-3">
+    <a href="https://www.gov.uk/guidance/avian-influenza-bird-flu-cases-and-disease-control-zones-in-england">Bird flu: rules in disease control zones in England</a>
+    </li>
 
-          <li class="govuk-!-margin-bottom-3">
-                <a href="https://www.gov.uk/guidance/disease-prevention-for-livestock-farmers">Disease prevention for livestock and poultry keepers</a></li>
+    <li class="govuk-!-margin-bottom-3">
+    <a href="https://www.gov.uk/guidance/apply-for-an-exemption-from-avian-influenza-disease-control-restrictions">Apply for an exemption from avian influenza disease control restrictions</a>
+    </li>
 
-          <li class="govuk-!-margin-bottom-3">
-            <a href="https://www.gov.uk/guidance/supplying-and-using-animal-by-products-as-farm-animal-feed">Supplying and using animal by-products as farm animal feed</a>
-          </li>
+    <li class="govuk-!-margin-bottom-3">
+        <a class="govuk-link" href="https://www.gov.uk/government/publications/bird-flu-licence-for-spreading-or-moving-used-poultry-litter-manure-and-slurry-from-a-protection-or-surveillance-zone-exd353hpaigb#:~:text=Statutory%20guidance-,Bird%20flu%3A%20licence%20for%20spreading%20or%20moving%20used%20poultry%20litter,zone%20or%20a%20surveillance%20zone.">Bird flu: licence for spreading or moving used poultry litter, manure and slurry from a protection or surveillance zone (EXD353(HPAI)(GB))</a>
+      </li>
 
-          </ul>
+    </ul>
 
-              <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-              <h2 id="storing-poultry-manure" class="govuk-heading-m">Storing and spreading poultry manure</h2>
+    <h2 id="test-for-salmonella-in-poultry" class="govuk-heading-m">Test for salmonella in poultry</h2>
 
-                    <p class="govuk-body">What you must do to avoid causing pollution from poultry manure.</p>
+    <p class="govuk-body">You must test poultry (chicken and turkey) flocks to prevent and control the spread of infection. What you have to do depends on the number of birds you keep and what you produce.</p>
 
-                    <ul class="govuk-list">
+      <h3 id="test-chickens" class="govuk-heading-s">Test your chickens</h3>
 
-                        <li class="govuk-!-margin-bottom-3">
+    <ul class="govuk-list">
+      <li class="govuk-!-margin-bottom-3">
+    <a href="https://www.gov.uk/guidance/salmonella-get-your-breeding-chickens-tested">Chicken breeders: poultry testing for salmonella</a></li>
+    <li class="govuk-!-margin-bottom-3">
+      <a href="https://www.gov.uk/guidance/salmonella-get-your-egg-laying-hens-tested">Laying hens and flocks: poultry testing for salmonella</a></li>
+      <li class="govuk-!-margin-bottom-3">
+    <a href="https://www.gov.uk/guidance/salmonella-get-your-broiler-flock-chickens-tested">Salmonella: get your broiler flock chickens tested</a>
+    </li>
+    </ul>
 
-                                <a class="govuk-link" href="https://www.gov.uk/guidance/pigs-and-poultry-intensive-farming-environmental-permits">Pigs and poultry intensive farming: environmental permits</a>
+    <h3 id="test-chickens" class="govuk-heading-s">Test your turkeys</h3>
 
-                            </li>
+    <ul class="govuk-list">
+      <li class="govuk-!-margin-bottom-3"><a href="https://www.gov.uk/guidance/salmonella-get-your-fattening-turkeys-tested">Salmonella: get your fattening turkeys tested</a></li>
+      <li class="govuk-!-margin-bottom-3"><a href="https://www.gov.uk/guidance/salmonella-get-your-breeding-turkeys-tested">Turkey breeders: poultry testing for salmonella</a></li>
+    </ul>
 
-                      <li class="govuk-!-margin-bottom-3">
 
-                              <a class="govuk-link" href="https://www.gov.uk/guidance/storing-silage-slurry-and-agricultural-fuel-oil">Store slurry, silage and agricultural fuel oil safely</a>
+          <h2 id="keep-healthy-poultry" class="govuk-heading-m">Keep healthy poultry</h2>
+          <p class="govuk-body">What you must do to make sure birds are healthy.</p>
+          <hr class="govuk-section-break govuk-section-break--s govuk-section-break">
 
-                          </li>
-                                <li class="govuk-!-margin-bottom-3">
-                                <a class="govuk-link" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/355571/Manure_Factsheet.pdf">Storage and spreading of poultry manure</a>
+    <ul class="govuk-list">
+
+              <li class="govuk-!-margin-bottom-3">
+                <a href="https://www.gov.uk/government/publications/poultry-on-farm-welfare">Poultry: on-farm welfare</a>
+              </lI>
+
+              <li class="govuk-!-margin-bottom-3">
+                <a href="https://www.gov.uk/guidance/poultry-welfare-off-the-farm">Poultry welfare off the farm</a>
+              </li>
+
+              <li class="govuk-!-margin-bottom-3">
+                <a href="https://food.gov.uk/business-guidance/poultry-farming-guidance">Poultry farming guidance</a>
+              </li>
+
+              <li class="govuk-!-margin-bottom-3">
+                    <a href="https://www.gov.uk/guidance/disease-prevention-for-livestock-farmers">Disease prevention for livestock and poultry keepers</a></li>
+
+              <li class="govuk-!-margin-bottom-3">
+                <a href="https://www.gov.uk/guidance/supplying-and-using-animal-by-products-as-farm-animal-feed">Supplying and using animal by-products as farm animal feed</a>
+              </li>
+
+              </ul>
+
+                  <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                  <h2 id="storing-poultry-manure" class="govuk-heading-m">Storing and spreading poultry manure</h2>
+
+                        <p class="govuk-body">What you must do to avoid causing pollution from poultry manure.</p>
+
+                        <ul class="govuk-list">
+
+                            <li class="govuk-!-margin-bottom-3">
+
+                                    <a class="govuk-link" href="https://www.gov.uk/guidance/pigs-and-poultry-intensive-farming-environmental-permits">Pigs and poultry intensive farming: environmental permits</a>
+
+                                </li>
+
+                          <li class="govuk-!-margin-bottom-3">
+
+                                  <a class="govuk-link" href="https://www.gov.uk/guidance/storing-silage-slurry-and-agricultural-fuel-oil">Store slurry, silage and agricultural fuel oil safely</a>
+
                               </li>
+                                    <li class="govuk-!-margin-bottom-3">
+                                    <a class="govuk-link" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/355571/Manure_Factsheet.pdf">Storage and spreading of poultry manure</a>
+                                  </li>
 
-                              <li class="govuk-!-margin-bottom-3"
+                                  <li class="govuk-!-margin-bottom-3"
 
-                                <li class="govuk-!-margin-bottom-3">
-                                <a class="govuk-link" href="https://www.gov.uk/guidance/how-to-use-store-or-move-manure-guano-and-digestive-tract-content">How to use, store or move manure, guano and digestive tract content</a>
-                              </li>
+                                    <li class="govuk-!-margin-bottom-3">
+                                    <a class="govuk-link" href="https://www.gov.uk/guidance/how-to-use-store-or-move-manure-guano-and-digestive-tract-content">How to use, store or move manure, guano and digestive tract content</a>
+                                  </li>
 
-                              <li class="govuk-!-margin-bottom-3">
-                              <a class="govuk-link" href="https://www.gov.uk/guidance/using-nitrogen-fertilisers-in-nitrate-vulnerable-zones">Using nitrogen fertilisers in nitrate vulnerable zones</a>
-                            </li>
-
-                              <li class="govuk-!-margin-bottom-3">
-
-                    <a class="govuk-link" href="https://www.gov.uk/guidance/storing-organic-manures-in-nitrate-vulnerable-zones">Store organic manures in nitrate vulnerable zones</a>
-
-                      </li>
-                        </ul>
-
-                        <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-                        <h2 id="burning-poultry-manure" class="govuk-heading-m">Burning poultry manure</h2>
-
-                              <p class="govuk-body">You must get approval to burn poultry manure.</p>
-
-                              <ul class="govuk-list">
-
-                                <li class="govuk-!-margin-bottom-3">
-
-                                        <a class="govuk-link" href="https://www.gov.uk/guidance/get-approval-to-burn-poultry-manure-in-a-combustion-unit">Burn poultry manure in a combustion unit</a>
-                                        </li>
+                                  <li class="govuk-!-margin-bottom-3">
+                                  <a class="govuk-link" href="https://www.gov.uk/guidance/using-nitrogen-fertilisers-in-nitrate-vulnerable-zones">Using nitrogen fertilisers in nitrate vulnerable zones</a>
+                                </li>
 
                                   <li class="govuk-!-margin-bottom-3">
 
-                                          <a class="govuk-link" href="https://www.gov.uk/government/publications/burning-poultry-manure-at-your-farm-apply-for-approval">Burning poultry manure at your farm: application for approval</a>
+                        <a class="govuk-link" href="https://www.gov.uk/guidance/storing-organic-manures-in-nitrate-vulnerable-zones">Store organic manures in nitrate vulnerable zones</a>
 
-                                      </li>
+                          </li>
+                            </ul>
+
+                            <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                            <h2 id="burning-poultry-manure" class="govuk-heading-m">Burning poultry manure</h2>
+
+                                  <p class="govuk-body">You must get approval to burn poultry manure.</p>
+
+                                  <ul class="govuk-list">
+
+                                    <li class="govuk-!-margin-bottom-3">
+
+                                            <a class="govuk-link" href="https://www.gov.uk/guidance/get-approval-to-burn-poultry-manure-in-a-combustion-unit">Burn poultry manure in a combustion unit</a>
+                                            </li>
+
                                       <li class="govuk-!-margin-bottom-3">
 
-                                              <a class="govuk-link" href="https://www.gov.uk/government/publications/burning-waste-in-the-open-after-an-animal-disease-outbreak-rps-251">Burning waste in the open after an animal disease outbreak: RPS 251</a>
+                                              <a class="govuk-link" href="https://www.gov.uk/government/publications/burning-poultry-manure-at-your-farm-apply-for-approval">Burning poultry manure at your farm: application for approval</a>
 
                                           </li>
-
-                                </ul>
-
-                                <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-                                <h2 id="hold-a-bird-gathering" class="govuk-heading-m">Bird gatherings</h2>
-
-                                      <p class="govuk-body">What you must do if you take birds to fairs, markets, shows, sales, exhibitions and some premises used for dealing or internet sales.</p>
-
-                                      <ul class="govuk-list">
-
                                           <li class="govuk-!-margin-bottom-3">
 
-                                                  <a class="govuk-link" href="https://www.gov.uk/guidance/bird-gatherings-licences">Hold a bird gathering</a>
+                                                  <a class="govuk-link" href="https://www.gov.uk/government/publications/burning-waste-in-the-open-after-an-animal-disease-outbreak-rps-251">Burning waste in the open after an animal disease outbreak: RPS 251</a>
 
                                               </li>
+
+                                    </ul>
+
+                                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                                    <h2 id="hold-a-bird-gathering" class="govuk-heading-m">Bird gatherings</h2>
+
+                                          <p class="govuk-body">What you must do if you take birds to fairs, markets, shows, sales, exhibitions and some premises used for dealing or internet sales.</p>
+
+                                          <ul class="govuk-list">
+
                                               <li class="govuk-!-margin-bottom-3">
 
-                                                      <a class="govuk-link" href="https://www.gov.uk/government/publications/bird-gatherings-general-licence">Bird gatherings: general licence</a>
+                                                      <a class="govuk-link" href="https://www.gov.uk/guidance/bird-gatherings-licences">Hold a bird gathering</a>
 
                                                   </li>
+                                                  <li class="govuk-!-margin-bottom-3">
 
-                                        </ul>
+                                                          <a class="govuk-link" href="https://www.gov.uk/government/publications/bird-gatherings-general-licence">Bird gatherings: general licence</a>
 
+                                                      </li>
 
-
-
-
-
-
-
-                      <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-                            <h2 id="selling-eggs" class="govuk-heading-m">Selling eggs</h2>
-
-                            <p class="govuk-body">What you must do when you sell eggs to the public.</p>
-
-                            <ul class="govuk-list">
-
-                                <li class="govuk-!-margin-bottom-3">
-                <a class="govuk-link" href="https://www.gov.uk/guidance/eggs-trade-regulations">Eggs: marketing and trade</a>
-              </li>
-              <li class="govuk-!-margin-bottom-3">
-                <a class="govuk-link" href="https://www.gov.uk/guidance/egg-marketing-standards">Egg marketing standards</a>
-              </li>
-              <li class="govuk-!-margin-bottom-3">
-                <a class="govuk-link" href="https://www.gov.uk/guidance/poultry-meat-marketing-standards">Poultry meat marketing standards</a>
-              </li>
-        </ul>
+                                            </ul>
 
 
-                  <h2 id="importing-poultry" class="govuk-heading-m">Import eggs and chicks</h2>
-                  <p class="govuk-body">What you must know when importing eggs and chicks into Great Britain.</p>
-                  <hr class="govuk-section-break govuk-section-break--s govuk-section-break">
 
-                  <ul class="govuk-list">
 
-                  <li class="govuk-!-margin-bottom-3">
-                  <a href="https://www.gov.uk/guidance/import-eggs-to-great-britain">Import eggs to Great Britain</a>
+
+
+
+
+                          <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                                <h2 id="selling-eggs" class="govuk-heading-m">Selling eggs</h2>
+
+                                <p class="govuk-body">What you must do when you sell eggs to the public.</p>
+
+                                <ul class="govuk-list">
+
+                                    <li class="govuk-!-margin-bottom-3">
+                    <a class="govuk-link" href="https://www.gov.uk/guidance/eggs-trade-regulations">Eggs: marketing and trade</a>
                   </li>
                   <li class="govuk-!-margin-bottom-3">
-                  <a href="https://www.gov.uk/guidance/hatching-eggs-and-chicks-marketing-standards">Hatching eggs and chicks marketing standards</a>
+                    <a class="govuk-link" href="https://www.gov.uk/guidance/egg-marketing-standards">Egg marketing standards</a>
                   </li>
 
                   </ul>
+                  <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
+                        <h2 id="selling-poultry-meat" class="govuk-heading-m">Selling poultry meat</h2>
 
-                  <h2 id="importing-poultry" class="govuk-heading-m">Export eggs and chicks</h2>
-                  <p class="govuk-body">What you must do when exporting eggs and chicks from Great Britain.</p>
-                  <hr class="govuk-section-break govuk-section-break--s govuk-section-break">
-
+                        <p>What you must do when you sell poultry meat to the public.</p>
                   <ul class="govuk-list">
-
-                    <li class="govuk-!-margin-bottom-3">
-                      <a href="https://www.gov.uk/guidance/poultry-health-scheme-how-to-register">Poultry Health Scheme: how to register</a>
-                    </li>
-
                   <li class="govuk-!-margin-bottom-3">
-                  <a href="https://www.gov.uk/guidance/export-eggs-from-great-britain">Export eggs from Great Britain</a>
+                    <a class="govuk-link" href="https://www.gov.uk/guidance/poultry-meat-marketing-standards">Poultry meat marketing standards</a>
                   </li>
-                  <li class="govuk-!-margin-bottom-3">
-                  <a href="https://www.gov.uk/guidance/hatching-eggs-and-chicks-marketing-standards#exporting-hatching-eggs-and-chicks-from-gb-to-the-eu">Hatching eggs and chicks marketing standards</a>
-                  </li>
-
-                  </ul>
+            </ul>
 
 
+                      <h2 id="importing-poultry" class="govuk-heading-m">Import eggs and chicks</h2>
+                      <p class="govuk-body">What you must know when importing eggs and chicks into Great Britain.</p>
+                      <hr class="govuk-section-break govuk-section-break--s govuk-section-break">
 
+                      <ul class="govuk-list">
 
-                          <!--                            <hr class="govuk-section-break govuk-section-break--m govuk-section-break">
-                                                      <h2 id="farming-organic-poultry " class="govuk-heading-m">Labelling organic food</h2>
+                      <li class="govuk-!-margin-bottom-3">
+                      <a href="https://www.gov.uk/guidance/import-eggs-to-great-britain">Import eggs to Great Britain</a>
+                      </li>
+                      <li class="govuk-!-margin-bottom-3">
+                      <a href="https://www.gov.uk/guidance/hatching-eggs-and-chicks-marketing-standards">Hatching eggs and chicks marketing standards</a>
+                      </li>
 
-                                                      <p class="govuk-body">What you must know about labelling organic food.</p>
+                      </ul>
 
-                                                      <ul class="govuk-list">
-                                                        <li class="govuk-!-margin-bottom-3">
-                                                        <a href="https://www.gov.uk/guidance/organic-farming-how-to-get-certification-and-apply-for-funding">Organic farming: how to get certification and funding in Great Britain</a>
+                      <h2 id="exporting-poultry" class="govuk-heading-m">Export eggs and chicks</h2>
+                      <p class="govuk-body">What you must do when exporting eggs and chicks from Great Britain.</p>
+                      <hr class="govuk-section-break govuk-section-break--s govuk-section-break">
 
-                              <li class="app-c-topic-list__item">
-                                      <a class="govuk-link" href="https://www.gov.uk/guidance/organic-food-labelling-rules">Organic food labelling rules</a>
-                                    </li>
+                      <ul class="govuk-list">
 
-                                    </ul> -->
+                        <li class="govuk-!-margin-bottom-3">
+                          <a href="https://www.gov.uk/guidance/poultry-health-scheme-how-to-register">Poultry Health Scheme: how to register</a>
+                        </li>
+
+                      <li class="govuk-!-margin-bottom-3">
+                      <a href="https://www.gov.uk/guidance/export-eggs-from-great-britain">Export eggs from Great Britain</a>
+                      </li>
+                      <li class="govuk-!-margin-bottom-3">
+                      <a href="https://www.gov.uk/guidance/hatching-eggs-and-chicks-marketing-standards#exporting-hatching-eggs-and-chicks-from-gb-to-the-eu">Hatching eggs and chicks marketing standards</a>
+                      </li>
+
+                      </ul>
+      </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="rules-for-farmers-and-land-managers">
+                Rules for farmers and land managers
+              </a>
+            </li>
+            <li>
+              <a href="https://www.gov.uk/guidance/funding-for-farmers">
+                Funding for farmers, growers and land managers
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+</div>
 
 {% endblock %}
