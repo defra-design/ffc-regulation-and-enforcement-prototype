@@ -1,0 +1,447 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Building new or changing existing silage clamps
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for this page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Environment",
+        href: "#"
+      },
+      {
+        text: "Food and farming"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-caption-xl c-title__context">
+        Guidance
+      </p>
+      <h1 class="govuk-heading-xl">
+        Building new or changing existing silage clamps
+      </h1>
+      <p class="govuk-body-l">Rules for those who build storage for silage, who's responsible. Also covers what you must tell the Environment Agency.</p>
+
+      <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+        <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+          <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+            Contents
+          </h2>
+          <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="#building-a-new-silage-store-or-making-a-substantial-change-to-a-store">
+                Building a new silage store or making a substantial change to a store
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#storing-silage-in-clamps">
+                Storing silage in clamps (or silos)
+              </a>
+            </li>
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#storing-silage-effluent">Storing silage effluent
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#storing-baled-silage">
+                Storing baled silage
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#if-you-are-served-notice">
+                Using baled silage
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#storing-field-silage">
+                Storing field silage
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#storage-which-is-exempt-from-building-rules">
+                Storage which is exempt from building rules
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#tell-the-environment-agency">
+                Tell the Environment Agency about your planned new or changed storage
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="if-you-need-help">
+                If you need help
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#if-you-are-served-notice">
+                If you're served a notice under the Silage, Slurry and Agricultural Fuel Oil (SSAFO) regulations
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#view-the-legislation">
+                View the legislation
+              </a>
+            </li>
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              <a href="#other-rules-relating-to-silage">
+                Other rules relating to silage
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+      <p>You must follow these rules if you:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>build a new silage store (silo or silage clamp) or make substantial changes</li>
+
+        <li>store silage</li>
+
+      </ul>
+      
+<p>If your farm is in a nitrate vulnerable zone (NVZ) there are <a href="https://www.gov.uk/guidance/storing-organic-manures-in-nitrate-vulnerable-zones"> extra rules for storing organic manures</a>. You can <a href="https://www.gov.uk/guidance/nutrient-management-nitrate-vulnerable-zones"> check if your farm is in an NVZ</a>.</p>
+      
+      <h2 id="building-a-new-silage-store-or-making-a-substantial-change-to-a-store" class="govuk-heading-m">Building a new silage store or making a substantial change to a store 
+      </h2>
+<p>Substantial changes usually means structural alterations, rather than minor repairs. <a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">Check with the Environment Agency</a> if you're not sure. 
+</p>
+
+<p>A new or substantially changed store must:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>have an expected lifespan of at least 20 years with maintenance - any part of a silage effluent tank that's underground must last 20 years without maintenance</li>
+
+  <li>be at least 10 metres (m) from inland or coastal waters, including yard drains, dry ditches and land drains</li>
+
+</ul>
+
+<p>You may need a safety zone larger than 10m if you farm where the water supply is taken from groundwater or within a groundwater source protection zone.</p>
+
+<p><a href="https://www.gov.uk/guidance/groundwater-source-protection-zones-spzs">Groundwater source protection zones</a> treat silage and silage effluent as organic manure. <a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">Contact the Environment Agency</a> to discuss how you can reduce risk in these areas. </p>
+
+<h3 class="govuk-heading-s">Before you start work</h3>
+
+<p>It's up to you to decide what planning and work is needed, you must: 
+</p>
+<ul class="govuk-list govuk-list--bullet">
+  
+  <li>tell the Environment Agency at least 14 days before you start construction of a store - you can also contact them for <a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">advice on planning and building a store</a></li>
+
+  <li>make sure you do not pollute the surrounding environment - for example, rivers or other watercourses</li>
+  
+  <li>check if you need <a href="https://www.gov.uk/planning-permission-england-wales">planning permission</a></li>
+
+  <li>make sure it meets build standards</li>
+
+</ul>
+
+<h3 class="govuk-heading-s">Once you've built storage</h3>
+
+<p>You must maintain it to make sure there's no risk of pollution. You're responsible for making sure your storage and maintenance complies with these regulations - get advice from the Environment Agency, a suitably experienced consultant or engineer if you need it.</p>
+
+<h2 id="storing-silage-in-clamps" class="govuk-heading-m">Storing silage in clamps (or silos)</h2>
+
+<p>All parts of a new silage clamp must be resistant to attack from silage effluent which is corrosive.</p>
+
+<p>Your silage clamp must have:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+
+  <li>an impermeable base extending beyond any walls</li> 
+
+  <li>impermeable drainage collection channels around the outside, flowing into an effluent tank</li> 
+
+</ul>
+
+<p>The base must comply with:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+<li><a href="http://shop.bsigroup.com/ProductDetail/?pid=000000000000172967">British Standard 8007:1987</a> and <a href="http://shop.bsigroup.com/ProductDetail/?pid=000000000030161093">British Standard 8110-1:1997</a> (for concrete bases)</li>
+
+<li><a href="http://shop.bsigroup.com/ProductDetail/?pid=000000000030210283">British Standard 594/EN 13108-4:2006</a> (for hot-rolled asphalt bases)</li> 
+
+</ul>
+ 
+<p>If your silage clamp has walls, they must withstand wall loadings set in <a href="http://shop.bsigroup.com/ProductDetail/?pid=000000000030262061">British Standard 5502-22:2003+A1:2013</a>. 
+ 
+<p>You should get written confirmation from your supplier that the system meets these standards.</p> 
+
+<p>Existing structures built before the rules came into force are exempt unless they are a significant risk of pollution and if you are served a notice requiring you to do work.</p> 
+
+<h2 id="storing-silage-effluent" class="govuk-heading-m">Storing silage effluent</h2> 
+
+<p>Your silage clamp must have an effluent collection system - a suitable tank.</p> 
+
+<p>Silage effluent tanks must not be within:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+<li>10 metres (m) of inland or coastal waters, including yard drains, dry ditches and land drains</li>  
+
+<li>50m of a spring, well or borehole</li> 
+
+</ul>
+
+<p><a href="https://www.gov.uk/guidance/rules-for-farmers-and-land-managers-to-prevent-water-pollution">Rules for farmers and land managers to prevent water pollution</a> treat silage and silage effluent as organic manure. You must take into account risk factors for runoff when deciding where to store silage effluent.</p>  
+
+
+<h3 class="govuk-heading-s">Effluent tanks</h3> 
+
+<p>If all parts of the effluent tank are above ground it must be constructed to resist attack from silage effluent for at least 20 years with maintenance.</p>
+
+<p>If any part is below ground, it should be impermeable for at least 20 years without maintenance.</p> 
+
+<p>You'll be asked to prove your tank is suitable, for example with a manufacturer's guarantee.</p> 
+
+<p>You can store silage effluent and slurry together if your tank has enough capacity - the legal minimum slurry capacity and the additional silage capacity - and is built to withstand both types of effluent. Mixing slurry can give off gases that are lethal to humans and livestock. You must never put silage effluent into an under-floor slurry store.</p>
+ 
+<h3 class="govuk-heading-s">Capacity</h3> 
+<p>The minimum capacity rules for effluent tanks should give you at least 2 days' storage at peak flow. However, it's up to you to make sure you've got enough capacity to avoid the risk of pollution.</p> 
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Silo capacity</th>
+      <th scope="col">Minimum effluent tank capacity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Up to 1,500 cubic metres</td>
+      <td>20 litres for each cubic metre</td>
+    </tr>
+    <tr>
+      <td>Over 1,500 cubic metres</td>
+      <td>30 cubic metres, plus 6.7 litres for each cubic metre of silo capacity over 1,500 cubic metres</td>
+    </tr>
+  </tbody>
+</table> 
+
+ 
+<h2 id="storing-baled-silage" class="govuk-heading-m">Storing baled silage</h2> 
+
+<p>You must seal baled silage in an impermeable membrane or bag it. It does not need a specially constructed base but you must make sure any silage you stored on the ground directly cannot leak into a water source.</p> 
+
+<p>You must keep baled silage at least 10m from inland or coastal waters, including yard drains, dry ditches and land drains.</p> 
+
+<p>You must not store field silage within 50 metres of a protected water supply source. This is any place where water is abstracted (taken) for any of the following purposes:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+<li>human consumption</li> 
+
+<li>use in farm dairies</li> 
+
+<li>human food preparation</li> 
+
+</ul>
+
+<p><a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">Ask the Environment Agency</a> about protected water sources or <a href ="https://magic.defra.gov.uk/MagicMap.aspx">use Magic map to check your local area</a>.</p> 
+ 
+<h2 id="using-baled-silage" class="govuk-heading-m">Using baled silage</h2> 
+
+<p>You must not open or remove the wrapping of silage bales within 10m of any inland freshwaters or coastal waters to make sure silage effluent doesn't leak into the water.</p> 
+
+<h2 id="storing-field-silage" class="govuk-heading-m">Storing field silage</h2> 
+
+<p>For silage to be stored as field silage there must be no construction works, for example walls or earth banks. You must not disturb topsoil.</p> 
+
+<p>If you make field silage you must:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+  <li>choose a suitable storage site</li> 
+
+  <li>tell your local Environment Agency office at least 14 days before you first use the site</li> 
+
+</ul>
+ 
+<p>You must not:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  
+<li>store field silage within 50m of a protected water supply</li> 
+<li>store field silage within 10m of inland or coastal waters</li> 
+
+</ul>
+
+<p><a href="https://www.gov.uk/government/publications/form-wqe4-making-or-storing-field-silage-notification--2">Use form WQE4</a> to tell the Environment Agency if you intend to <a href="https://www.gov.uk/government/publications/form-wqe4-making-or-storing-field-silage-notification">make or store field silage</a>. Give at least 14 days' notice. Send the completed form to your <a href="https://www.gov.uk/government/organisations/environment-agency/about/access-and-opening">local Environment Office</a>.</p> 
+
+<p>A protected water supply is any place water is abstracted (taken) for licenced abstraction or:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+  <li>human consumption</li> 
+
+  <li>use in farm dairies</li> 
+
+  <li>human food preparation</li> 
+
+</ul>
+ 
+<p>Ask the Environment Agency about protected water sources or search <a href="https://magic.defra.gov.uk/MagicMap.aspx">magic maps</a>.</p> 
+ 
+<h2 id="storage-which-is-exempt-from-building-rules" class="govuk-heading-m">Storage which is exempt from building rules</h2> 
+
+<p>Your installation is exempt from SSAFO regulations for new stores if:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+<li>you built it before March 1991</li> 
+
+<li>you entered into a contract for construction before March 1991 and completed it before September 1991</li> 
+
+</ul>
+ 
+<p>However, it is no longer exempt if you make substantial changes - for example structural changes, increasing capacity or relocating your store.</p> 
+
+<h3 class="govuk-heading-s">Temporary storage</h3> 
+
+<p>The rules do not apply to silage you store temporarily in a container, trailer or vehicle for transportation.</p> 
+ 
+<h2 id="tell-the-environment-agency" class="govuk-heading-m">Tell the Environment Agency about your planned new or changed storage</h2> 
+
+<p>You must <a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">contact the Environment Agency</a> at least 14 days before you build new storage for silage or make substantial changes to an existing store. You should tell them about your planned new or changed storage as early in the planning process as possible.</p>
+
+<p>You'll need to supply:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+<li>your name, address, telephone number and email address</li> 
+
+<li>the type of store you're proposing to build or change</li> 
+
+<li>the OS grid reference of your silage store (in the format of 2 letters and 10 numbers)</li>
+
+</ul>
+ 
+<p>You may also need to supply:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+  <li>for underground or partially underground silage effluent tanks you'll need a certification from the installer - you must provide this certification to the <a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">Environment Agency</a> because the tank is required to perform for at least 20 years without maintenance</li>
+
+  <li>a site plan drawing of the structure</li>
+
+  <li>a design drawing confirming the materials that will be used and their design, specification and layout - you may also be asked to confirm that your design meets the requirements of BS 5502</li>
+
+  <li>a copy of the manufacturer's specifications and guarantee if you plan to use prefabricated products</li> 
+ 
+</ul>
+
+<p>The Environment Agency may contact you to offer you guidance on changes you need to make to your installation before they can agree to it.</p> 
+ 
+<h2 id="if-you-need-help" class="govuk-heading-m">If you need help</h2> 
+
+<p><a href="https://www.gov.uk/government/organisations/environment-agency#org-contacts">Get in touch with the Environment Agency</a> if you need advice.</p>
+
+<p>The Environment Agency can also help make sure you avoid committing an offence.</p> 
+
+<p>If your farm is in a nitrate vulnerable zone (NVZ) there are <a href="https://www.gov.uk/guidance/storing-organic-manures-in-nitrate-vulnerable-zones">extra rules for storing organic manures</a>. You can <a href="https://www.gov.uk/guidance/nutrient-management-nitrate-vulnerable-zones">check if your farm is in an NVZ</a>.</p> 
+ 
+<h2 id="if-you-are-served-notice" class="govuk-heading-m">If you're served a notice under the Silage, Slurry and Agricultural Fuel Oil (SSAFO) regulations</h2> 
+
+<p><a href="https://ffc-regulation-prototype.herokuapp.com/slurry-silage-oil/notice-2">Find out what to do if you're served a notice</a> to:</p> 
+
+<ul class="govuk-list govuk-list--bullet">
+
+  <li>stop you using an unsuitable silage store until it's improved or relocated</li> 
+
+<li>make you bring storage up to the current standards if it believes there's a significant risk of pollution</li> 
+
+</ul>
+
+<h2 id="view-the-legislation" class="govuk-heading-m">View the legislation</h2> 
+
+<p><a href="https://www.legislation.gov.uk/uksi/2010/639/contents/made">The Water Resources (Control of Pollution) (Silage, Slurry and Agricultural Fuel Oil) (England) Regulations 2010</a> - known as SSAFO regulations.</p> 
+ 
+<h2 id="other-rules-relating-to-silage" class="govuk-heading-m">Other rules relating to silage</h2> 
+
+<p>Silage and silage effluent are treated as organic manure in:</p> 
+ 
+<ul class="govuk-list govuk-list--bullet">
+
+<li><a href="https://www.gov.uk/guidance/rules-for-farmers-and-land-managers-to-prevent-water-pollution">Rules for farmers and land managers to prevent water pollution</a></li> 
+
+<li><a href="https://www.gov.uk/guidance/groundwater-source-protection-zones-spzs">Groundwater source protection zones</a></li> 
+
+</ul>
+
+
+      <nav class="govuk-prototype-kit-common-templates-pagination" role="navigation" aria-label="Pagination">
+
+  <!--    {{ govukPagination({
+        previous: {
+          labelText: "Page 1 title",
+          href: "#"
+        },
+        next: {
+          labelText: "Page 3 title",
+          href: "#"
+        }
+      }) }}
+
+      <p>
+        <a href="#">
+          View a printable version of the whole guide
+        </a>
+      </p>-->
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="rules-collection">
+                Rules for farmers and land managers
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
